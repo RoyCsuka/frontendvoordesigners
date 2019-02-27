@@ -1,4 +1,4 @@
-# frontend voor designers - opdracht 1
+# Roy Csuka - opdracht 1
 Ik heb het mogelijk gemaakt om afbeeldingen te filteren op kleur!
 
 Voor deze opdracht heb ik me verdiept in het filteren op kleur. Zo ben ik begonnen met de functionaliteit en ben ik gelijk in JavaScript begonnen (zie demo 1).

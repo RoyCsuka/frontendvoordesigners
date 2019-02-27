@@ -40,7 +40,7 @@ header {
     background-color: black;
     color: #fff;
     padding: 0 0.5em;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
 header h1 {
@@ -51,13 +51,6 @@ header h1 {
 
 main section:first-of-type {
     font-size: 1.1em;
-}
-
-main section legend {
-    font-size: 1.2em;
-    padding-bottom: 0.1em;
-    margin-bottom: 0.9em;
-    border-bottom: 0.1em solid black;
 }
 
 @media (min-width:80em) {
