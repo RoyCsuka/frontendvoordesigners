@@ -1,5 +1,5 @@
 # frontend voor designers - opdracht 1
-Ik heb een kleurensorteerapplicatie gemaakt!
+Ik heb het mogelijk gemaakt om afbeeldingen te filteren op kleur!
 
 Voor deze opdracht heb ik me verdiept in het filteren op kleur. Zo ben ik begonnen met de functionaliteit en ben ik gelijk in JavaScript begonnen (zie demo 1).
 
@@ -9,14 +9,8 @@ Bij de derde iteratie slag (demo 3) kwam ik erachter dat ik het ook op had kunne
 
 Bijvoorbeeld bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
 
-[Demo 1 voor opdracht 1](/opdracht1/v1/index.html)
+[Demo 1 voor opdracht 1](https://roycsuka.github.io/frontendvoordesigners/opdracht1/v1/index.html)
 
-[Demo 2 voor opdracht 1](http://htmlpreview.github.com/RoyCsuka/frontendvoordesigners/blob/master/opdracht1/v2/index.html)
+[Demo 2 voor opdracht 1](https://roycsuka.github.io/frontendvoordesigners/opdracht1/v2/index.html)
 
-[Demo 3 voor opdracht 1](http://htmlpreview.github.com/RoyCsuka/frontendvoordesigners/blob/master/opdracht1/v3/index.html)
-
-[Demo 4 voor opdracht 1](http://htmlpreview.github.com/RoyCsuka/frontendvoordesigners/blob/master/opdracht1/v4/index.html)
-
-Je kan ook een link plaatsen naar de bron code van de demo:
-
-[Code demo 1 voor opdracht 1](https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
+[Demo 3 voor opdracht 1](https://roycsuka.github.io/frontendvoordesigners/opdracht1/v3/index.html)
