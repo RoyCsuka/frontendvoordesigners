@@ -9,7 +9,7 @@ Bij de derde iteratie slag (demo 3) kwam ik erachter dat ik het ook op had kunne
 
 Bijvoorbeeld bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
 
-[Demo 1 voor opdracht 1](http://htmlpreview.github.com//RoyCsuka/frontendvoordesigners/blob/master/opdracht1/v1/index.html)
+[Demo 1 voor opdracht 1](/opdracht1/v1/index.html)
 
 [Demo 2 voor opdracht 1](http://htmlpreview.github.com/RoyCsuka/frontendvoordesigners/blob/master/opdracht1/v2/index.html)
 
