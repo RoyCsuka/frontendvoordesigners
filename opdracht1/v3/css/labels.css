@@ -1,0 +1,59 @@
+fieldset {
+    border: none;
+    padding: 0 0 2em 0;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+legend {
+    width: 100%;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+input {
+    margin-left: -1000px;
+    margin-right: 1000px;
+}
+
+label {
+    display: inline-flex;
+    width: 35px;
+    height: 25px;
+    border: 3px solid white;
+    color: rgba(255, 255, 255, 0);
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+input:checked + label {
+    border: 3px solid #333;
+}
+
+label:first-of-type {
+    background-color: #4392F1;
+}
+
+label:nth-of-type(2) {
+    background-color: #895737;
+}
+
+label:nth-of-type(3) {
+    background-color: #FFBF00;
+}
+
+label:nth-of-type(4) {
+    background-color: #fe7700;
+}
+
+label:nth-of-type(5) {
+    background-color: #6B2D5C;
+}
+
+label:nth-of-type(6) {
+    background-color: #f0a9b6;
+}
+
+label:nth-of-type(7) {
+    background-color: #131515;
+}
