@@ -1,0 +1,40 @@
+main section:nth-of-type(2) {
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0.5em;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+    max-height: 50em;
+}
+
+.blauw img.blauw,
+.bruin img.bruin,
+.geel img.geel,
+.oranje img.oranje,
+.paars img.paars,
+.roze img.roze,
+.zwartwit img.zwart-wit {
+    display: none;
+}
+
+@media (min-width:80em) {
+    main section:nth-of-type(2) {
+        column-count: 4;
+    }
+}
+
+@media (min-width:32em) and (max-width:45em) {
+    main section:nth-of-type(2) {
+        column-count: 2;
+    }
+}
+
+@media (max-width:32em) {
+    main section:nth-of-type(2) {
+        column-count: 1;
+    }
+}
