@@ -3,7 +3,7 @@ Voor opdracht twee kun [hier](https://roycsuka.github.io/frontendvoordesigners/o
 
 Voor deze opdracht heb ik me verdiept in de mouseover statement van JavaScript. 
 
-Hieronder zijn de iteraties te zien betreft vormgeving en JavaScript
+Hieronder zijn de iteraties te zien betreft vormgeving en JavaScript.
 
 [Demo 1](https://roycsuka.github.io/frontendvoordesigners/opdracht2/v1/index.html)
 

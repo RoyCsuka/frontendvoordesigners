@@ -1,40 +1,67 @@
-main section:nth-of-type(2) {
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0.5em;
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 51em;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+main > div {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main div > section h2 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 0.1em solid white;
+}
+
+main div > section h2, main div > section p {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main div > section {
+    margin: 0 1em;
+    max-width: 15em;
+    max-height: 15em;
+    overflow: hidden;
+}
+
+main div > section:hover div {
+    margin-top: -15em;
+    transition-duration: 0.7s;
+}
+
+main div > section a div h2 {
+    margin-top: 0;
+}
+
+main div > section a div {
+    width: 15em;
+    height: 15em;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.7s;
 }
 
 section img {
     width: 100%;
-    height: auto;
-    margin-bottom: 0.5em;
-    max-height: 50em;
-}
-
-.blauw img.blauw,
-.bruin img.bruin,
-.geel img.geel,
-.oranje img.oranje,
-.paars img.paars,
-.roze img.roze,
-.zwartwit img.zwart-wit {
-    display: none;
-}
-
-@media (min-width:80em) {
-    main section:nth-of-type(2) {
-        column-count: 4;
-    }
-}
-
-@media (min-width:32em) and (max-width:45em) {
-    main section:nth-of-type(2) {
-        column-count: 2;
-    }
-}
-
-@media (max-width:32em) {
-    main section:nth-of-type(2) {
-        column-count: 1;
-    }
+    max-width: 300px;
+    display: inline;
+    z-index: 0;
+    position: relative;
+    margin-bottom: -0.25em;
 }
