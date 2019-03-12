@@ -3,13 +3,15 @@ Voor opdracht twee kun [hier](https://roycsuka.github.io/frontendvoordesigners/o
 
 Voor deze opdracht heb ik me verdiept in de mouseover statement van JavaScript. 
 
+Voor de [eerste demo](https://roycsuka.github.io/frontendvoordesigners/opdracht2/v1/index.html) heb ik het eerst zelf even proberen te fixen zonder Google te gebruiken maar kwam er vrij snel achter dat ik nog niet vakbekwaam ben voor zo'n complexe interactie. Dus heb ik voor mijzelf eerst een aantal dingen opgesteld: 
+
 Hieronder zijn de iteraties te zien betreft vormgeving en JavaScript.
 1. Hover aan een kant van de div
 2. https://www.adlibweb.com/direction-aware-hover-effects/ 
 3. Positie veranderen van de div met css variabel
 4. https://stackoverflow.com/questions/41370741/how-do-i-edit-a-css-variable-using-js
 
-Voor de [eerste demo](https://roycsuka.github.io/frontendvoordesigners/opdracht2/v1/index.html) heb ik het eerst zelf even proberen te fixen zonder Google te gebruiken maar kwam er vrij snel achter dat ik nog niet vakbekwaam ben voor zo'n complexe interactie. Dus heb ik voor mijzelf eerst een aantal dingen opgesteld: 
+Voor de eerste demo heb ik de JavaScript proberen te begrijpen wat van [codepen](https://codepen.io/noeldelgado/pen/pGwFx/) kwam. Maar ik ben bang dat iemand mij dit moet gaan uitleggen. Het is erg complex en misschien is er voor mij wel een makkelijkere oplossing.
 
 
 [Demo 2](https://roycsuka.github.io/frontendvoordesigners/opdracht1/v2/index.html)
