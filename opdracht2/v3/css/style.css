@@ -4,8 +4,11 @@ body, html {
 }
 
 main {
-    width: 51em;
+    width: 800px;
     margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 a {
@@ -16,56 +19,17 @@ h1 {
 	width: 100%;
 }
 
-main > div {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
+section {
+	width: 100%;
+	overflow: hidden;
 }
 
-main div > section h2 {
-    padding-top: 2em;
-    padding-bottom: 1em;
-    border-bottom: 0.1em solid white;
-}
-
-main div > section h2, main div > section p {
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-main div > section {
-    margin: 0 1em;
-    max-width: 15em;
-    max-height: 15em;
-    overflow: hidden;
-}
-
-main div > section:hover div {
-    margin-top: -15em;
-    transition-duration: 0.7s;
-}
-
-main div > section a div h2 {
-    margin-top: 0;
-}
-
-main div > section a div {
-    width: 15em;
-    height: 15em;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-    padding: 1em;
-    position: relative;
-    z-index: 1;
-    transition-duration: 0.7s;
+section div {
+	display: inline-flex;
 }
 
 section img {
-    width: 100%;
-    max-width: 300px;
-    display: inline;
-    z-index: 0;
-    position: relative;
-    margin-bottom: -0.25em;
+	width: 100%;
+	top: 0;
+	display: inline-block;
 }
