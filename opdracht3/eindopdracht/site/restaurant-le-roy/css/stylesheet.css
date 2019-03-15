@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Noto+Sans:400,400i,700,700i');
+
+/* Algemene Styling */
+
+body,
+html {
+    font-family: 'Noto Sans';
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section,
+article,
+#map {
+    width: 950px;
+    margin: 0 auto 0 auto;
+    display: block;
+    text-align: center;
+}
+
+article {
+    max-width: 650px;
+    margin: 0 auto 15px auto;
+}
+
+.gereserveerd {
+    padding: 0 25%;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+h1,
+h2,
+.h2,
+h3,
+li {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2,
+.h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic,
+.bold {
+    display: inline;
+}
+
+figure,
+p.arrow,
+div.home-bk h1,
+form fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 440px;
+    height: 30px;
+    overflow: hidden;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+}
+
+.reserveer-input,
+.chefs {
+    display: inline-block;
+    width: 440px;
+    box-sizing: border-box;
+}
+
+.dsk_content {
+    display: inherit;
+}
+
+.mbl_content {
+    display: none;
+}
+
+.right {
+    margin-left: 65px;
+}
+
+#gallerij .full img {
+    width: 100%;
+}
+
+.mar-t-20 {
+    margin-top: 20px;
+}
+
+
+/* Button */
+
+a.button,
+form button {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff4646;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+    font-family: 'Josefin Sans';
+    border: none;
+}
+
+
+/* Overlay svg */
+
+.overlay {
+    position: relative;
+}
+
+.overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/****             Menu             ****/
+
+
+/* Box shadow https://www.cssmatic.com/box-shadow */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    -webkit-box-shadow: 0px 10px 80px 9px rgba(75, 75, 75, 0.75);
+    -moz-box-shadow: 0px 10px 80px 9px rgba(75, 75, 75, 0.75);
+    box-shadow: 0px 10px 80px 9px rgba(75, 75, 75, 0.75);
+    z-index: 999999;
+}
+
+nav ul {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 25px 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 20px;
+}
+
+
+/* Menu hover - Laatste li geen border */
+
+nav ul li:last-child:hover {
+    border: none;
+}
+
+.active a {
+    border-color: #ff4646;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 5px solid white;
+}
+
+nav ul li a:hover {
+    border-color: #c74041;
+}
+
+nav ul li.active a:hover {
+    border-color: #ff4646;
+}
+
+nav li a.button:hover {
+    background-color: #c74041;
+}
+
+form button:hover {
+    background-color: #c74041;
+}
+
+
+/* Header */
+
+div.home-bk {
+    background-image: url(../images/header-photo.jpg);
+    height: 600px;
+}
+
+.menu.bk {
+    background-image: url(../images/header-menu.jpg);
+    background-position: bottom;
+}
+
+.gallerij.bk {
+    background-image: url(../images/header-gallerij.jpg);
+}
+
+.contact.bk {
+    background-image: url(../images/header-contact.jpg);
+}
+
+.bk {
+    height: 300px;
+    background-position: center;
+}
+
+div.home-bk,
+.menu.bk,
+.gallerij.bk,
+.contact.bk {
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+div h1 {
+    padding-top: 258.5px;
+    font-size: 55px;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/****             Home pagina             ****/
+
+p.arrow {
+    font-size: 55px;
+    line-height: 45px;
+}
+
+div.home-bk h1,
+div.home-bk span {
+    color: white;
+    text-align: center;
+}
+
+div.home-bk p {
+    color: white;
+    text-align: center;
+}
+
+div.home-bk h1 {
+    padding-top: 200px;
+    font-size: 45px;
+    text-transform: inherit;
+}
+
+div.home-bk span {
+    font-size: 35px;
+    margin: 0;
+    display: block;
+}
+
+
+/* Formulier Home */
+
+#reserveer {
+    margin-top: 20px;
+}
+
+form fieldset {
+    border: 0;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    text-align: left;
+}
+
+form input,
+textarea {
+    width: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin: 5px 0;
+    border-radius: 0;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.reserveer-input.full {
+    width: 100%;
+}
+
+form button {
+    color: white;
+    background-color: #ff4646;
+    margin-top: 20px;
+}
+
+
+/****             Menu Pagina             ****/
+
+.chefs {
+    border: 4px solid #333;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.chefs h3 {
+    color: white;
+}
+
+.chefs figcaption {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    width: 440px;
+    display: inline-table;
+}
+
+section table:nth-child(2) {
+    margin-left: 65px;
+}
+
+table .h2 {
+    margin-bottom: 0;
+}
+
+th {
+    border: 4px solid #ff4646;
+    background-color: #ff4646;
+    color: white;
+    width: 450px;
+    height: 100px;
+}
+
+th p {
+    margin: 0;
+}
+
+th .h2 {
+    color: white;
+    display: block;
+}
+
+tr td:first-child {
+    width: 300px;
+}
+
+td {
+    border: 4px solid black;
+}
+
+td p {
+    text-align: left;
+    margin: 0;
+}
+
+td p.italic {
+    display: block;
+}
+
+td,
+th {
+    padding: 10px 15px;
+}
+
+
+/****             Gallerij Pagina             ****/
+
+#gallerij figure {
+    display: inline-grid;
+    margin-top: 20px;
+}
+
+#gallerij figure:first-child,
+#gallerij figure:nth-child(2) {
+    margin-top: 0;
+}
+
+#gallerij img {
+    width: 440px;
+    height: auto;
+}
+
+
+/* Springen van de pijl | Source: https://stackoverflow.com/questions/32306089/css-smooth-bounce-animation */
+
+.arrow {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spring {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@keyframes spring {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* Defineer de naam 'spring' voor de @keyframes rule */
+
+.spring {
+    -webkit-animation-name: spring;
+    animation-name: spring;
+}
+
+
+/* Google Maps */
+
+#map {
+    height: 300px;
+    -webkit-appearance: none;
+    margin-top: 50px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    height: 35px;
+}
+
+footer small {
+    line-height: 35px;
+    width: 950px;
+    margin: 0 auto;
+    clear: both;
+    display: block;
+}
+
+
+/****             Mobiel design             ****/
+
+@media only screen and (max-width:500px) {
+    .dsk_content {
+        display: none;
+    }
+    .mbl_content {
+        display: inherit;
+    }
+    p {
+        font-size: 18px;
+    }
+    header {
+        position: inherit;
+    }
+    nav ul {
+        box-sizing: border-box;
+        padding: 20px 0 5px 0;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        padding: 20px 0;
+        display: inline-block;
+    }
+    nav ul li:last-child a {
+        width: calc(100% - 80px);
+    }
+    nav ul li:last-child {
+        margin: 25px 0;
+        border: none;
+    }
+    section,
+    article,
+    table {
+        box-sizing: border-box;
+        padding: 0 15px;
+        display: inline-block;
+    }
+    div.home-bk {
+        height: 500px;
+    }
+    div.home-bk h2 {
+        padding-top: 50px;
+    }
+    section,
+    article,
+    form input,
+    .reserveer-input,
+    .chefs,
+    video,
+    nav ul,
+    nav ul li a,
+    table,
+    #gallerij img,
+    #map {
+        width: 100%;
+        height: auto;
+    }
+    img {
+        height: auto;
+    }
+    input {
+        margin: 10px 0;
+    }
+    iframe {
+        height: 300px;
+    }
+    .chefs {
+        margin-bottom: 30px;
+    }
+    .chefs.right {
+        margin-bottom: 0;
+    }
+    .button,
+    button {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    .right,
+    section table:nth-child(2) {
+        margin-left: 0;
+    }
+    tr td:first-child {
+        width: 70%;
+    }
+    div h1 {
+        padding-top: 180px;
+    }
+    .menu.bk,
+    .gallerij.bk,
+    .home-bk,
+    .contact.bk {
+        height: 220px;
+    }
+    .overlay img {
+        position: absolute;
+        top: 4px;
+        left: 21px;
+        width: calc(100% - 42px);
+    }
+    #gallerij figure:nth-child(2) {
+        margin-top: 40px;
+    }
+    footer small,
+    .gereserveerd,
+    div.home-bk {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}

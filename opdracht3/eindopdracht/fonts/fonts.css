@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'Axiforma-bold';
+    src: url('Axiforma-Bold.eot');
+    src: url('Axiforma-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Axiforma-Bold.woff2') format('woff2'),
+        url('Axiforma-Bold.woff') format('woff'),
+        url('Axiforma-Bold.ttf') format('truetype'),
+        url('Axiforma-Bold.svg#Axiforma-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma-light';
+    src: url('Axiforma-Light.eot');
+    src: url('Axiforma-Light.eot?#iefix') format('embedded-opentype'),
+        url('Axiforma-Light.woff2') format('woff2'),
+        url('Axiforma-Light.woff') format('woff'),
+        url('Axiforma-Light.ttf') format('truetype'),
+        url('Axiforma-Light.svg#Axiforma-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma-extra-bold';
+    src: url('Axiforma-ExtraBold.eot');
+    src: url('Axiforma-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Axiforma-ExtraBold.woff2') format('woff2'),
+        url('Axiforma-ExtraBold.woff') format('woff'),
+        url('Axiforma-ExtraBold.ttf') format('truetype'),
+        url('Axiforma-ExtraBold.svg#Axiforma-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma-book';
+    src: url('Axiforma-Book.eot');
+    src: url('Axiforma-Book.eot?#iefix') format('embedded-opentype'),
+        url('Axiforma-Book.woff2') format('woff2'),
+        url('Axiforma-Book.woff') format('woff'),
+        url('Axiforma-Book.ttf') format('truetype'),
+        url('Axiforma-Book.svg#Axiforma-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma-semi-bold';
+    src: url('Axiforma-SemiBold.eot');
+    src: url('Axiforma-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Axiforma-SemiBold.woff2') format('woff2'),
+        url('Axiforma-SemiBold.woff') format('woff'),
+        url('Axiforma-SemiBold.ttf') format('truetype'),
+        url('Axiforma-SemiBold.svg#Axiforma-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.5em;;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h4, h5 {
+    margin-bottom: 0
+}
+
+h1, h2, h3, h4, h5, p b {
+    font-family: 'Axiforma-extra-bold';
+}
+
+body, p, ul li, a {
+    font-family: 'Open Sans', sans-serif;
+}

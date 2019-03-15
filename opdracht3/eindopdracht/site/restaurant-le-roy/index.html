@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Restaurant Le Roy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warm, gezellig, gastvrijheid en stijlvol. De ingredienten die Le Roy jou te bieden heeft. Buiten het feit dat Le Roy het beste restaurant van Amsterdam is, heeft Le Roy ook nog een nachtbar.">
+    <meta name="keywords" content="Le Roy, Restaurant, Amsterdam, #1, Nummer 1 Restaurant, School opdracht, HVA, Roy Csuka">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Restaurant Le Roy</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallerij.html">Gallerij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#reservering" class="button">Reserveer een tafel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home-bk">
+
+        <h1>
+            <span>Welkom bij</span> Restaurant Le Roy
+        </h1>
+        <span>&#x2655;</span>
+        <p>Ontbijt: 9:00 tot 11:00</p>
+        <p>Lunch: 11:00 tot 16:00</p>
+        <p>Diner: 16:00 tot 01:00</p>
+        <span class="arrow spring">&#x02228;</span>
+    </div>
+    <article>
+        <h2>Le Roy</h2>
+        <p class="italic bold">
+            Warm, gezellig, gastvrijheid en stijlvol.
+        </p>
+        <p>
+            Dit zijn de ingredienten die Le Roy jou te bieden heeft. Buiten het feit dat Le Roy het beste restaurant van Amsterdam is, heeft Le Roy ook nog een nachtbar. Hier schenken wij cocktails en kunt u door tot laat in de nacht (05:00 sluit de bar).
+        </p>
+    </article>
+    <section class="overlay">
+        <!-- mp4 van deze website: https://coverr.co/ -->
+        <video width="950" height="282" autoplay muted loop poster="/video/night-bbq.jpg" class="dsk_content">
+            <source src="video/night-bbq.mp4" type="video/mp4">     
+        </video>
+        <img src="images/bestbqqinadam.svg" alt="Best bqq in Amsterdam 2018" class="dsk_content">
+        <video width="1920" height="1080" autoplay muted loop poster="/video/night-bbq.jpg" class="mbl_content">
+            <source src="video/night-bbq-mob.mp4" type="video/mp4">     
+        </video>
+        <img src="images/bestbqqinadam-mob.svg" alt="Best bqq in Amsterdam 2018" class="mbl_content" width="720" height="398">
+    </section>
+    <section>
+        <h2>Ontmoet Le Chefs</h2>
+        <div class="chefs">
+            <figure>
+                <img src="images/chef-met-mes.jpg" alt="Chef met een mes in zijn hand" width="440" height="440">
+                <figcaption>https://pixabay.com/en/cooking-eat-cut-food-meat-court-890885/</figcaption>
+            </figure>
+            <h3>Chef Bram</h3>
+            <p class="bold">Rotisseur</p>
+            <p class="italic"> (Meat Cook)</p>
+        </div>
+        <div class="chefs right">
+            <figure>
+                <img src="images/chef-met-sigaret.jpg" alt="Chef met een met sigaret in zijn hand" width="440" height="440">
+                <figcaption>https://pixabay.com/en/cooking-smoking-cigarette-kitchen-890880/</figcaption>
+            </figure>
+            <h3>Chef Roy</h3>
+            <p class="bold">Chef de Partie </p>
+            <p class="italic"> (Station Chef )</p>
+        </div>
+    </section>
+    <section id="reservering">
+        <h2>Maak een reservering</h2>
+        <form action="gereserveerd.html" id="reserveer">
+            <fieldset>
+                <div class="reserveer-input">
+                    <label for="naam">Voor en Achternaam</label>
+                    <input type="text" id="naam">
+                </div>
+                <div class="reserveer-input right">
+                    <label for="datum">Datum</label>
+                    <input type="date" id="datum">
+                </div>
+                <div class="reserveer-input">
+                    <label for="tijd">Tijd</label>
+                    <input type="time" id="tijd">
+                </div>
+                <div class="reserveer-input right">
+                    <label for="personen">Aantal personen</label>
+                    <input type="number" id="personen" min="1" max="11">
+                </div>
+                <button type="submit" form="reserveer" value="Submit">Reserveer nu</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <small>&copy; Copyright 2018. Restaurant Le Roy</small>
+    </footer>
+</body>
+
+</html>

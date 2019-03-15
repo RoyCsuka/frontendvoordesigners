@@ -1,0 +1,506 @@
+html body>footer:last-of-type {
+    padding: 0 1em 8.63em;
+}
+
+main>article:first-child div div:first-of-type {
+    display: inline;
+}
+
+main>article:first-child div div:first-of-type span {
+    display: inline-block;
+    text-align: left;
+}
+
+main>article:first-child div div:first-of-type span:nth-of-type(2) {
+    padding-top: 0.5em;
+}
+
+body main>article:first-child>div:nth-of-type(2) {
+    padding-bottom: 0;
+}
+
+main>article:first-child div:nth-of-type(2) footer>span:first-of-type {
+    font-size: 1.1em;
+    padding-top: 0.2em;
+}
+
+main>article:first-child div div:nth-of-type(2) {
+    padding-top: 0;
+}
+
+main article:first-child div:nth-of-type(2) {
+    background-color: #f7f4f1;
+    width: calc(100% + 1.875em);
+    margin-left: -1em;
+    padding: 3em 1em;
+    box-sizing: border-box;
+}
+
+main article:first-child div:first-of-type div {
+    display: flex;
+    justify-content: space-between;
+}
+
+main>article:first-child div:first-of-type a {
+    padding: 1.2em 1.2em 1em 1.2em;
+    background-color: #ffffff;
+    z-index: 2;
+    color: #675c53;
+    text-decoration-line: underline;
+    height: 100%;
+}
+
+main>article:first-child div:first-of-type a:before {
+    content: '<';
+    margin-right: 0.65em;
+    display: inline-block;
+}
+
+body main article:first-child div:first-of-type div:last-of-type {
+    margin-top: 0.5em;
+    margin-left: auto;
+    padding: inherit;
+    box-sizing: inherit;
+    width: calc(100% - 2.5em);
+    display: inline-flex;
+    position: absolute;
+    background-color: transparent;
+}
+
+body main article:first-child div:first-of-type div:last-of-type button {
+    height: 2.5em;
+    padding: 0;
+}
+
+body main article:first-child div:first-of-type div:last-of-type button:last-of-type {
+    margin-left: 0.1em;
+}
+
+body main article:first-child div:first-of-type div:last-of-type button:last-of-type a {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.body-progressbar-fixed main>article:first-child>div:first-of-type {
+    z-index: 3;
+    background-color: rgba(242, 241, 242, 0.5);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+main>article:first-child>div:first-of-type {
+    max-width: 64em;
+    margin: 0 auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+main>article:first-child div:first-of-type button:first-of-type {
+    margin-left: auto;
+    background-image: url(/img/icons/verhaal-toevoegen-knop.svg);
+}
+
+main>article:first-child div:first-of-type button:last-of-type {
+    background-image: url(/img/icons/like-knop.svg);
+}
+
+main article:first-child div:first-of-type button {
+    width: 3.5em;
+    height: 4em;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-left: 1em;
+}
+
+main article:first-child div>h1 {
+    font-size: 1.875em;
+    max-width: 34em;
+    margin: 1.25em auto 0 auto;
+}
+
+main>article h1 {
+    margin-top: 1.25em;
+    margin-bottom: 0;
+}
+
+main>article footer {
+    max-width: 64em;
+    margin: 0 auto;
+}
+
+main article footer,
+main article footer p {
+    padding: 0;
+}
+
+main article footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main article footer ul li {
+    color: #50a4df;
+    display: inline;
+    border-bottom: 0.13em solid #50a4df;
+}
+
+main article footer ul li:first-of-type {
+    height: 0.94em;
+}
+
+main article footer ul li:first-of-type:before {
+    content: '';
+    background-image: url(../img/logo-uov.svg);
+    background-size: cover;
+    width: 0.8em;
+    height: 0.8em;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+
+/*   Aanbevolen  */
+
+main section section {
+    padding-top: 2em;
+}
+
+main section section>div {
+    display: flex;
+    width: calc(300% - 3.5em);
+}
+
+main section section article {
+    border-radius: 0.667em;
+    -webkit-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    -moz-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    padding: 0 1.25em;
+    margin: 0 0.8em 2em 0.8em;
+    margin-bottom: 1.9em;
+}
+
+article a {
+    text-decoration: none;
+}
+
+main section section article img {
+    border-radius: 0.667em 0.667em 0 0;
+    height: 100%;
+    max-height: 17em;
+    object-fit: cover;
+    object-position: top;
+    width: calc(100% + 2.5em);
+    margin-left: -1.25em;
+}
+
+article h3 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 0.9em 0 0;
+    color: #000000;
+}
+
+
+/*  Bullet points */
+
+main section section>ul {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+main section section>ul li:first-of-type button {
+    background-color: #000000;
+}
+
+main section section>ul li {
+    text-align: center;
+    list-style-type: none;
+}
+
+main section section>ul li button {
+    background-color: #8b837e;
+    border-radius: 10em;
+    padding: 0.7em 0.7em;
+    font-size: 0.7em;
+    margin: 0 0.4em;
+}
+
+main section section>ul li button:hover {
+    background-color: #000000;
+}
+
+
+/*  Meta Data  */
+
+article footer>span:first-of-type {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+}
+
+article footer span {
+    color: #675c53;
+    width: 100%;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+article footer div:first-of-type span:first-of-type {
+    min-width: 70%;
+}
+
+article footer {
+    padding: 0 0 1.5em 0;
+}
+
+
+/* Datum en leesduur */
+
+article footer div:first-of-type {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+article footer div:first-of-type span:last-of-type {
+    text-align: right;
+}
+
+article footer div:first-of-type span:last-of-type::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/icons/leesduur.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.4em;
+}
+
+
+/* Likes en views metadata */
+
+article footer div:nth-of-type(2) {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+article footer div:nth-of-type(2) span:first-of-type,
+article footer div:nth-of-type(2) span:nth-of-type(2) {
+    display: inline-block;
+    border-bottom: 0.13em solid #50a3de;
+    color: #50a3de;
+    width: auto;
+    text-align: right;
+    padding: 1em 0 0 0;
+}
+
+article footer div:nth-of-type(2) span:first-of-type::before {
+    background-image: url(../img/icons/likes.svg);
+    width: 1em;
+}
+
+article footer div:nth-of-type(2) span:nth-of-type(2)::before {
+    background-image: url(../img/icons/weergave.svg);
+    width: 1.5em;
+}
+
+article footer div:nth-of-type(2) span:nth-of-type(2) {
+    margin-left: 0.5em;
+}
+
+article footer div:nth-of-type(2) span:first-of-type::before,
+article footer div:nth-of-type(2) span:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.63em;
+}
+
+
+/* Likes en views buttons */
+
+article footer div:nth-of-type(2) button:first-of-type {
+    margin-left: auto;
+    margin-right: 0.5em;
+}
+
+article footer div:nth-of-type(2) button:first-of-type {
+    width: 2.5em;
+    background-image: url("/img/icons/like-knop.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+article footer div:nth-of-type(2) button:nth-of-type(2) {
+    width: 2.5em;
+    background-image: url("/img/icons/verhaal-toevoegen-knop.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+@media (min-width: 64em) {
+    /*  Andere lezen ook  */
+    body main>section section div article {
+        height: 32em;
+        margin-bottom: 3em;
+        position: relative;
+    }
+    main>article:first-child>div:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main>article:first-child>div:nth-of-type(2) h1 {
+        max-width: 34.1em;
+        width: 100%;
+    }
+    main section section>div {
+        width: calc(300% - -0.5em);
+    }
+    body main>article:first-child>div:nth-of-type(2)>section {
+        width: 100%;
+        max-width: 64em;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 37.5em) {
+    main>article:first-child div:first-of-type button:last-of-type {
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: 45em) {
+    main section section article {
+        padding: 0 1.25em 1.25em 1.25em;
+    }
+    body main article:first-child div:first-of-type div:last-of-type {
+        position: relative;
+        width: 100%;
+    }
+    body-progressbar-fixed main section section>div article:first-child footer div:nth-of-type(2) button {
+        display: inherit;
+    }
+    body-progressbar-fixed main section section>div article:first-child footer div:nth-of-type(2) {
+        width: 100%;
+        position: relative;
+        justify-content: unset;
+        padding-bottom: 0;
+    }
+    body.body-progressbar-fixed {
+        padding: 0 1em 5.6em;
+    }
+    .body-progressbar-fixed main article:first-child>div:first-of-type {
+        bottom: 0;
+        padding: 1em;
+        box-sizing: border-box;
+        background-color: #f9f9f8;
+    }
+    body.body-progressbar-fixed main article:first-child>div:first-of-type a {
+        padding: 1.2em 1.2em 1.2em 2.2em;
+        margin-left: -1em;
+    }
+    body.body-progressbar-fixed main article:first-child>div:first-of-type button {
+        display: inherit;
+        height: 3.5em;
+    }
+    body.body-progressbar-fixed main section div article:first-of-type>div:first-of-type {
+        box-sizing: border-box;
+        padding: 1em;
+    }
+    .body-progressbar-fixed main article:first-child>div:first-of-type,
+    main>article footer {
+        max-width: 64em;
+    }
+    main article:first-child>div:first-of-type,
+    main>article footer {
+        max-width: 45em;
+    }
+    main article:first-child div>h1 {
+        max-width: 24em;
+    }
+}
+
+@media (min-width: 45em) {
+    body main section section article footer div:last-of-type {
+        position: absolute;
+        bottom: 1em;
+    }
+    body main section section>ul {
+        display: none;
+    }
+    body main>section section>div article:first-of-type footer>div:nth-of-type(2) button {
+        display: inherit!important;
+    }
+    body main>article h1 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 45em) and (max-width:64em) {
+    html body main div section:first-of-type {
+        max-width: 45em;
+        margin: 0 auto;
+    }
+    /*  Andere lezen ook  */
+    body main section section article {
+        margin-bottom: 1.9em;
+    }
+    body main section section article {
+        position: relative;
+        height: 15em;
+    }
+    body main section section>div {
+        display: block;
+        width: 100%;
+    }
+    body main section section>div img {
+        width: calc(50% + 1.25em);
+        margin-bottom: -0.25em;
+    }
+    body main section section article a>div {
+        width: calc(50% - 2em);
+    }
+    body main section section>div img,
+    body main section section article a>div {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    body main section section article a>div {
+        position: absolute;
+        top: 0;
+        left: calc(50% + 1em);
+        height: 100%;
+    }
+    body main section section>div img {
+        border-radius: 0.667em 0 0 0.667em;
+    }
+    body.vier main section section>div article:first-child footer div:nth-of-type(2) {
+        width: 100%;
+        display: inline-flex;
+        justify-content: unset;
+    }
+    .body-progressbar-fixed main article:first-child>div:first-of-type,
+    main>article footer {
+        max-width: 64em;
+    }
+    main article:first-child>div:first-of-type,
+    main>article footer {
+        max-width: 45em;
+    }
+    main article:first-child div>h1 {
+        max-width: 24em;
+    }
+}

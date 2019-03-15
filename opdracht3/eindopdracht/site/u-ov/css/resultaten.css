@@ -1,0 +1,120 @@
+main>div {
+    background-image: none;
+    background-color: #fcd900;
+}
+
+div section form:nth-of-type(2) div label:last-of-type input[type="radio"]+span {
+    color: #e7772b;
+}
+
+div section form:nth-of-type(2) div label:last-of-type input[type="radio"]:checked+span::after {
+    content: "";
+    width: 100%;
+    height: 0.2em;
+    background-color: #e7772b;
+    display: block;
+    position: absolute;
+    bottom: -0.65em;
+}
+
+
+/* Resultaten klik */
+
+main>section:first-of-type ul {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+
+main>section:first-of-type ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+main>section:first-of-type ul li button {
+    background-color: #50a3de;
+}
+
+main>section:first-of-type ul li button::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.8em;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url(../img/icons/kruis.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Verwijder filteropties */
+
+.apart main>section:first-of-type ul li:first-of-type button,
+.chaos main>section:first-of-type ul li:nth-of-type(2) button,
+.detail main>section:first-of-type ul li:nth-of-type(3) button,
+body.apart main>section section:nth-of-type(2n+2) div article:first-of-type {
+    display: none;
+}
+
+
+/* Filteropties gechecked */
+
+@media (min-width:45em) {
+    .apart section form:first-of-type div label:first-of-type span,
+    .chaos section form:first-of-type div label:nth-of-type(2) span,
+    .detail section form:first-of-type div label:nth-of-type(8) span {
+        background-color: #f1f1f1;
+    }
+    .apart section form:first-of-type div label:first-of-type input[type=checkbox]+span::before,
+    .chaos section form:first-of-type div label:nth-of-type(2) input[type=checkbox]+span::before,
+    .detail section form:first-of-type div label:nth-of-type(8) input[type=checkbox]+span::before {
+        background-size: 85%;
+        border-color: #e7772b;
+    }
+}
+
+
+/* Articles */
+
+body main>section section:nth-of-type(2n+1) {
+    display: none;
+}
+
+@media (min-width:64em) {
+    body main>section section:nth-of-type(2n+2) {
+        width: 100%;
+        margin-left: 0;
+    }
+    body main section section:nth-of-type(2n+2)>div {
+        justify-content: flex-start;
+    }
+    body main section section:nth-of-type(2n+2) article {
+        width: calc(33.33% - 4em);
+    }
+    body main section section:nth-of-type(2n+2) article:last-of-type {
+        display: inline-flex;
+        margin-left: 0.8em;
+    }
+    body main>section section:nth-of-type(2n+2) div article, body main>section section:nth-of-type(2n+2) div article:nth-of-type(2), body main>section section:nth-of-type(2n+2) div article:first-of-type {
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+    }
+    html body main section section:nth-of-type(2n+2) article:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width:45em) {
+    body main section section:nth-of-type(2)>div,
+    main section section:nth-of-type(2n+2)>div {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    main section section:nth-of-type(2n+2) {
+        padding-top: 0;
+    }
+    main > section:nth-of-type(2) section:nth-of-type(2)>div article:nth-of-type(5) footer {
+        height: 9em;
+    }
+}

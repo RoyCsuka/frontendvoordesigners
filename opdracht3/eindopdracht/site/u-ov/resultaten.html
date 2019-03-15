@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Utrecht (U-OV) verhalen Overzichtspagina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/resultaten.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Roy Csuka">
+    <meta name="studentennummer" content="500780628">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="In opdracht van U-OV is dit. Op deze website vind je alle 99 verhalen van Max J. Molovich.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="img/logo-uov.svg" alt="Utrecht (U-OV) verhalen" title="Utrecht (U-OV) verhalen">
+                </a>
+            </li>
+            <li class="add">
+                <a href="mijn-verhalen-leeg.html">
+                    <sup>0</sup>
+                    <img src="img/icons/mijn-verhalen.svg" alt="Account en login" title="Account en login">
+                    <span>Mijn verhalen</span>
+                </a>
+                <a href="mijn-verhalen.html">
+                    <sup>1</sup>
+                    <img src="img/icons/mijn-verhalen.svg" alt="Account en login" title="Account en login">
+                    <span>Mijn verhalen</span>
+                </a>
+            </li>
+            <li>
+                <a href="inloggen.html">
+                    <img src="img/icons/mijn-u-ov.svg" alt="Account en login" title="Account en login">
+                    <span>Mijn account</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="top">
+            <section>
+                <h1><b>101</b> verhalen voor inspiratie &amp; vermaak</h1>
+                <h2>U-OV verhalen</h2>
+                <h2>Vind je verhaal</h2>
+                <button>Vind je verhaal met filteren</button>
+                <form onsubmit="return false">
+                    <button>terug</button>
+                    <fieldset>
+                        <button value="volgorde"><img src="./img/icons/sort-a-z.svg" alt=""></button>
+                        <button value="filteren">Keuzes filteren</button>
+                        <div>
+                            <legend>Wat voor verhaal zoek je?</legend>
+                            <button>Selecteer je thema</button>
+                            <label><input type="checkbox"><span>Apart</span></label>
+                            <label><input type="checkbox"><span>Chaotisch</span></label>
+                            <label><input type="checkbox"><span>Derde persoon</span></label>
+                            <label><input type="checkbox"><span>Dialoog</span></label>
+                            <label><input type="checkbox"><span>Diepgaand</span></label>
+                            <label><input type="checkbox"><span>Enthousiast</span></label>
+                            <label><input type="checkbox"><span>Fictie</span></label>
+                            <label><input type="checkbox"><span>Gedetailleerd</span></label>
+                            <label><input type="checkbox"><span>Grof</span></label>
+                            <label><input type="checkbox"><span>Instructief</span></label>
+                            <label><input type="checkbox"><span>Kort sprekend</span></label>
+                            <label><input type="checkbox"><span>Over de top</span></label>
+                            <label><input type="checkbox"><span>Poëtisch</span></label>
+                            <label><input type="checkbox"><span>Vergezocht</span></label>
+                            <label><input type="checkbox"><span>Weinig woorden</span></label>
+                        </div>
+                        <div>
+                            <legend>Hoe lang wil je over dit verhaal doen?</legend>
+                            <button>Selecteer de duur van het verhaal</button>
+                            <label><input type="radio" name="sorteren" value="kort"><span>Moet zo overstappen (kort)</span></label>
+                            <label><input type="radio" name="sorteren" value="gemiddeld"><span>Onder de 2:30 minuten</span></label>
+                            <label><input type="radio" name="sorteren" value="lang"><span>Ik heb alle tijd</span></label>
+                        </div>
+                        <div>
+                            <p>Sorteer op</p>
+                            <label><input type="radio" name="sorteren" value="auteur"><span>Auteur</span></label>
+                            <label><input type="radio" name="sorteren" value="datum"><span>Datum</span></label>
+                            <label><input type="radio" name="sorteren" value="populariteit"><span>Populariteit</span></label>
+                            <button value="volgorde"><img src="./img/icons/sort-a-z.svg" alt=""></button>
+                            <button value="filteren">Keuzes filteren</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form onsubmit="return false">
+                    <fieldset>
+                        <div>
+                            <p>Sorteer op</p>
+                            <label><input type="radio" name="sorteren" value="auteur"><span>Auteur</span></label>
+                            <label><input type="radio" name="sorteren" value="datum"><span>Datum</span></label>
+                            <label><input type="radio" name="sorteren" value="populariteit"><span>Populariteit</span></label>
+                            <button value="volgorde"><img src="./img/icons/sort-a-z.svg" alt=""><img src="./img/icons/sort-z-a.svg" alt=""></button>
+                            <button value="filteren"><a href="index.html">Keuzes filteren</a></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <section>
+            <div>
+                <h2><span>28</span> Resultaten</h2>
+                <ul>
+                    <li><button>Apart</button></li>
+                    <li><button>Chaotisch</button></li>
+                    <li><button>Gedetailleerd</button></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <section>
+                <article>
+                    <a href="verhaal-doof.html">
+                        <img src="img/verhalen/doof_eenzaam-verhaal-Roy-Csuka.png" alt="Verhaal van de dag: Doof. Eenzame sfeer">
+                    </a>
+                    <div>
+                        <h3>Doof (79)</h3>
+                        <footer>
+                            <span>Roy Csuka</span>
+                            <div>
+                                <span>30 januari 2019</span>
+                                <span>1:30</span>
+                            </div>
+                            <div class="like_button">
+                                <span class="count">1264</span>
+                                <span>1344</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/Alzheimer-Poster-V2.jpg" alt="Verhaal: Doof. Eenzame sfeer">
+                        </a>
+                        <div>
+                            <h3>Alzheimer (1)</h3>
+                            <footer>
+                                <span>Daniel Ros</span>
+                                <div>
+                                    <span>20 december 2018</span>
+                                    <span>0:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">2</span>
+                                    <span>9</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/Verhaal_Marilyn_Doornoink.jpg" alt="Charlie Sheen van Marilyn Doornoink">
+                        </a>
+                        <div>
+                            <h3>Charlie Sheen (10)</h3>
+                            <footer>
+                                <span>Marilyn Doornoink</span>
+                                <div>
+                                    <span>30 januari 2019</span>
+                                    <span>1:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">5</span>
+                                    <span>8</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/Verhaal-martin%20bril-esmee%20janssen-web%20213.jpg" alt="Verhaal: Doof. Eenzame sfeer">
+                        </a>
+                        <div>
+                            <h3>Martin Bril (20)</h3>
+                            <footer>
+                                <span>Esmee Janssen</span>
+                                <div>
+                                    <span>30 januari 2019</span>
+                                    <span>1:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">5</span>
+                                    <span>8</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/Nichterig_Desktop_Luuk_Arts.jpg" alt="Verhaal: Nichterig. ">
+                        </a>
+                        <div>
+                            <h3>Nichterig (34)</h3>
+                            <footer>
+                                <span>Luuk Arts</span>
+                                <div>
+                                    <span>30 november 2018</span>
+                                    <span>2:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">200</span>
+                                    <span>9121</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/Interview-(78).jpg" alt="Charlie Sheen van Marilyn Doornoink">
+                        </a>
+                        <div>
+                            <h3>Interview (78)</h3>
+                            <footer>
+                                <span>Jorik van de haan</span>
+                                <div>
+                                    <span>10 december 2018</span>
+                                    <span>2:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">2102</span>
+                                    <span>8000</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/verhaal.johan.jpg" alt="Verhaal: Johan Cruijff.">
+                        </a>
+                        <div>
+                            <h3>Johan Cruijff (44)</h3>
+                            <footer>
+                                <span>Erik de kamps</span>
+                                <div>
+                                    <span>8 december 2018</span>
+                                    <span>1:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">5004</span>
+                                    <span>6553</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="verhaal-detail.html">
+                            <img src="img/verhalen/verhaal.johan.jpg" alt="Verhaal: Johan Cruijff.">
+                        </a>
+                        <div>
+                            <h3>Johan Cruijff (44)</h3>
+                            <footer>
+                                <span>Erik de kamps</span>
+                                <div>
+                                    <span>8 december 2018</span>
+                                    <span>1:30</span>
+                                </div>
+                                <div class="like_button">
+                                    <span class="count">5004</span>
+                                    <span>6553</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <article>
+                    <a href="verhaal-detail.html">
+                        <img src="img/verhalen/rosakoopman-ericlucassen.jpg" alt="Laatste verhaal van deze maand">
+                    </a>
+                    <div>
+                        <h3>Eric Lucassen (30)</h3>
+                        <footer>
+                            <span>Rosa Koopman</span>
+                            <div>
+                                <span>30 januari 2019</span>
+                                <span>1:30</span>
+                            </div>
+                            <div class="like_button">
+                                <span class="count">1200</span>
+                                <span>1451</span>
+                                <button class="like"></button>
+                                <button class="opslaan"></button>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <h2>Zoek je meer verhalen?</h2>
+            <button><a href="#top">Vind je verhaal met filteren</a></button>
+        </section>
+        <section>
+            <h3>Neem contact op</h3>
+            <p><b>0900 - 525 2241</b></p>
+            <p>Openingstijden: maandag t/m vrijdag 8:00 uur tot 20:00 uur. Voor dit informatienummer betaal je je gebruikelijke belkosten. </p>
+        </section>
+        <!--
+
+<div class="like-button">
+    <button>Like</button>
+    <span class="count"></span>
+</div>
+-->
+    </aside>
+    <footer>
+        <section>
+            <div>
+                <a href="index.html">
+                    <img src="img/logo-uov.svg" alt="logo">
+                </a>
+                <a href="facebook.com" target="_blank">
+                    <img src="img/icons/facebook-logo.svg" alt="U-OV Facebook">
+                </a>
+                <a href="twitter.com" target="_blank">
+                    <img src="img/icons/twitter-logo.svg" alt="U-OV Twitter">
+                </a>
+            </div>
+            <a href="https://www.u-ov.info/meer-qbuzz/voorwaarden" target="_blank">Voorwaarden</a>
+            <a href="https://www.u-ov.info/meer-qbuzz/disclaimer-privacy" target="_blank">Disclaimer &amp; Privacy</a>
+            <a href="https://www.u-ov.info/meer-qbuzz/cookies" target="_blank">Cookies</a>
+            <a href="http://nurksmagazine.nl/tag/stijloefeningen/" target="_blank">Verhalen van Max J. Molovich</a>
+            <a href="https://www.u-ov.info/" target="_blank">U-OV Website</a>
+        </section>
+    </footer>
+    <script type="text/javascript" src="js/sorteren-az.js"></script>
+    <script type="text/javascript" src="js/filter-verwijderen.js"></script>
+    <script type="text/javascript" src="js/open-filters.js"></script>
+    <script type="text/javascript" src="js/open-filters-40em.js"></script>
+</body>
+
+</html>
+
+<!-- Met pattern="" kun je regels voor je input velden toevoegen. Dit is bijvoorbeeld voor je postcode: [1-9][0-9]{3}\s?[a-zA-Z]{2} -->

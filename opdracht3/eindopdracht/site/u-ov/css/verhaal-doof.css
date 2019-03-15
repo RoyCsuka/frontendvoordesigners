@@ -1,0 +1,215 @@
+main article>div:last-of-type {
+    display: none;
+}
+
+main article>div:nth-of-type(3) {
+    width: 500vw;
+    display: inline-flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-left: -402vw;
+    position: relative;
+}
+
+main article>div:nth-of-type(3) img {
+    width: 100vw;
+    height: 100%;
+}
+
+@media (min-width: 64em) {
+    body main>article:first-child>div:nth-of-type(2) h1 {
+        font-size: 2.1em;
+        max-width: 30.5em;
+        justify-content: flex-start;
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 64em) {
+    main article>div:nth-of-type(3) {
+        display: none;
+    }
+    main article>div:last-of-type {
+        width: 500vw;
+        display: inline-flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        position: relative;
+        background-color: #343535;
+        margin-left: -400vw;
+        min-height: 50em;
+    }
+    main article>div:last-of-type img {
+        width: 100vw;
+        height: 100%;
+    }
+    main article>div:last-of-type button {
+        background: transparent;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0;
+        z-index: 0;
+        transition: 0.7s;
+    }
+    .verhaal-1,
+    .verhaal-2,
+    .verhaal-3,
+    .verhaal-4,
+    .verhaal-4-5,
+    .verhaal-5-5,
+    .verhaal-5,
+    .verhaal-1,
+    .verhaal-2,
+    .verhaal-3,
+    .verhaal-4,
+    .verhaal-4-5,
+    .verhaal-5-5,
+    .verhaal-5 {
+        transition: 1.7s;
+    }
+    /*  Eerste verhaal  */
+    .hover-link {
+        left: 401vw;
+        transition: 0.7s;
+        width: calc(35vw + 1em);
+        height: 15%;
+    }
+    /*  Tweede verhaal  */
+    .hover-link2 {
+        left: 311vw;
+        width: calc(70vw + 1em);
+        height: 23%;
+    }
+    /*  Derde verhaal  */
+    .hover-link3 {
+        left: 235vw;
+        width: calc(15vw + 1em);
+        height: 66%;
+        bottom: -11em!important;
+        transform: rotate(50deg);
+    }
+    /*  Vierde verhaal  */
+    .hover-link4 {
+        left: 140vw;
+        width: calc(15vw + 1em);
+        height: 25%;
+    }
+    /*  Vierde verhaal  */
+    .hover-link4-5 {
+        left: 140vw;
+        width: calc(15vw + 1em);
+        height: 25%;
+        z-index: 2;
+    }
+    .verhaal-5 .hover-link4-5,
+    .verhaal-4 .hover-link5-5,
+    .verhaal5-5 .hover-link4,
+    .verhaal-4-5 .hover-link5 {
+        display: none;
+    }
+    /*  Vijfde verhaal  */
+    .hover-link5 {
+        left: 47vw;
+        width: calc(15vw + 1em);
+        height: 10%;
+        bottom: 16%!important;
+    }
+    /*  Vijfde verhaal  */
+    .hover-link5-5 {
+        left: 47vw;
+        width: calc(15vw + 1em);
+        height: 10%;
+        bottom: 16%!important;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 45em) {
+    main > section section>div {
+        width: calc(280% - 7.5em)!important;
+    }
+}
+
+@media (min-width: 37.5em) and (max-width: 64em) {
+    main article>div:nth-of-type(4) {
+        display: none;
+    }
+    main article>div:nth-of-type(3) {
+        width: 500vw;
+        display: inline-flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        position: relative;
+        background-color: #343535;
+        margin-left: -400vw;
+        min-height: 50em;
+    }
+    main article>div:nth-of-type(3) img {
+        width: 100vw;
+        height: 100%;
+    }
+    main article>div:nth-of-type(3) button {
+        background: transparent;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0;
+        z-index: 0;
+        transition: 0.7s;
+    }
+    .verhaal-1-45em,
+    .verhaal-2-45em,
+    .verhaal-3-45em,
+    .verhaal-4-45em,
+    .verhaal-4-5-45em,
+    .verhaal-5-5-45em,
+    .verhaal-5-45em {
+        transition: 1.7s;
+    }
+    /*  Eerste verhaal  */
+    .hover-link-45em {
+        left: 401vw;
+        transition: 0.7s;
+        width: calc(35vw + 1em);
+        height: 15%;
+    }
+    /*  Tweede verhaal  */
+    .hover-link2-45em {
+        left: 315vw;
+        width: calc(70vw + 1em);
+        height: 18%;
+    }
+    /*  Derde verhaal  */
+    .hover-link3-45em {
+        left: 225vw;
+        width: calc(15vw + 1em);
+        height: 66%;
+        bottom: -11em!important;
+        transform: rotate(50deg);
+    }
+    /*  Vierde verhaal  */
+    .hover-link4-45em {
+        left: 140vw;
+        width: calc(15vw + 1em);
+        height: 25%;
+    }
+    /*  Vierde verhaal  */
+    .hover-link4-45em {
+        left: 138vw;
+        width: calc(57vw + 1em);
+        height: 50%;
+        z-index: 2;
+    }
+    /*  Vijfde verhaal  */
+    .hover-link5-45em {
+        left: 47vw;
+        width: calc(15vw + 1em);
+        height: 8%;
+        bottom: 12%!important;
+    }
+    .verhaal-5-45em .hover-link4-5-45em,
+    .verhaal-4-45em .hover-link5-5-45em,
+    .verhaal5-5-45em .hover-link4-45em,
+    .verhaal-4-5-45em .hover-link5-45em {
+        display: none;
+    }
+}

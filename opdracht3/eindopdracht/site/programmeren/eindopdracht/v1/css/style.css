@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:700');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#bk {
+    background-image: url(../img/bk-space.svg);
+    background-size: cover;
+    height: 4560px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: -4px 0 0 0;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+h1#count-down {
+    font-size: 6em;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arimo', monospace;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h2#count-height {
+    position: fixed;
+    font-size: 2.5em;
+    right: 30px;
+    top: 10px;
+    font-family: monospace;
+}
+
+h1#count-down, h2#count-height {
+    color: red;
+    font-weight: bolder;
+}
+
+#rocket {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+}
+
+#rocket img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}

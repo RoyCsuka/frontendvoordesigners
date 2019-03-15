@@ -1,0 +1,99 @@
+main>section>section:first-of-type legend {
+    padding: 1em 0 2em;
+}
+
+body main>section>section:last-of-type {
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body main>section>section:last-of-type h3 {
+    padding-bottom: 1em;
+}
+
+
+/* Omgekeerde HTML formulier */
+
+main>section>section:first-of-type label::before {
+    display: none;
+}
+
+main>section>section:first-of-type input {
+    margin-top: 0;
+}
+
+main>section>section:first-of-type span::before {
+    content: '';
+    width: 2em;
+    height: 1.4em;
+    display: inline-block;
+    margin-bottom: -1.25em;
+    background-color: #fff;
+    -webkit-transition: border-color .2s ease-in;
+    -o-transition: border-color .2s ease-in;
+    transition: border-color .2s ease-in;
+    background-position: center left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main>section>section:first-of-type label:first-of-type span::before {
+    background-image: url(../img/icons/mijn-u-ov.svg);
+}
+
+main>section>section:first-of-type label:nth-of-type(2) span::before,
+main>section>section:first-of-type label:nth-of-type(3) span::before {
+    background-image: url(../img/icons/lock.svg);
+}
+
+main>section>section:first-of-type label {
+    margin-bottom: 2em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+form[name="registreren"] fieldset label span {
+    margin-left: 0;
+}
+
+html body section form[name="registreren"]:first-of-type input:focus+span:before {
+    margin-top: 0.8em;
+}
+
+html body section form[name="registreren"]:first-of-type input:focus+span {
+    font-size: 0.8em;
+    background-color: #fff;
+    margin-left: 0.4em;
+    color: #e7772b;
+}
+
+html body section form[name="registreren"]:first-of-type input:focus+span:before {
+    margin-right: 0.4em;
+    height: 1.75em;
+    margin-top: 0.6em;
+    box-sizing: border-box;
+    padding-bottom: 1em;
+}
+
+form[name="registreren"] input:invalid+span {
+    color: red;
+}
+
+form[name="registreren"] input:valid {
+    border-color: green;
+}
+
+form[name="registreren"] input:invalid {
+    border-color: red;
+}
+
+@media (max-width:64em) {
+    main>section>section:first-of-type {
+        background-color: #ffffff;
+        border-radius: 0.63em;
+        margin-bottom: 1em;
+    }
+}

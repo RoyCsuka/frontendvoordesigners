@@ -1,0 +1,769 @@
+/*   BEGIN TOP BLOK   */
+
+body h3 {
+    font-size: 1.35em;
+}
+
+main>div {
+    background: url('../img/U-OV-busstation-bussen.jpg') no-repeat center;
+    background-size: cover;
+    height: auto;
+    width: calc(100% + 1em);
+    padding: 1.875em 1em 3.5em 0;
+    margin-left: -1em;
+    margin-bottom: 1.5em;
+}
+
+main div section:first-of-type {
+    padding: 1.875em 0.938em 0 0.938em;
+    margin-top: 2em;
+    background-color: white;
+    border-radius: 0 0.625em 0.625em 0;
+    -webkit-box-shadow: 0 1.333em 3em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 1.333em 3em 0 rgba(103, 92, 83, .3);
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #e6772b;
+}
+
+body main>div section h2:first-of-type {
+    display: inherit;
+}
+
+body main>div section h2:nth-of-type(2) {
+    display: none;
+    margin-top: 0.5em;
+}
+
+main>div section:first-of-type h2 {
+    padding-top: 0;
+    margin-left: 0;
+}
+
+
+/*   BEGIN FORMULIER   */
+
+section form:nth-child(3) p,
+body div section form:nth-child(3) input {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+section form:nth-child(3) input {
+    border: 0.13em solid black;
+    border-radius: 0.18em;
+}
+
+legend {
+    padding: 1.25em 0 0 0;
+    font-size: 1.2em
+}
+
+div section form:nth-of-type(2) {
+    margin-top: 1.5em;
+}
+
+
+/* Witte en grijzige vlak naast container */
+
+div section form:nth-of-type(2)::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 10.7em;
+    margin-top: -10.7em;
+    background-color: #ffffff;
+    margin-left: -30em;
+    width: 30em;
+}
+
+div section form:nth-of-type(2) fieldset::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 4em;
+    width: 30em;
+    margin-left: -30em;
+    margin-bottom: -4em;
+    background-color: #f8f6f3;
+}
+
+div section form:nth-of-type(2) div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    padding: 1em;
+    left: 0;
+    border-radius: 0 0 0.625em 0;
+    box-sizing: border-box;
+    background-color: #f7f4f1;
+    bottom: 0;
+    z-index: 0;
+}
+
+div section form:nth-of-type(2) div p {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+div section form:nth-of-type(2) div label:first-of-type {
+    margin-left: 1em;
+}
+
+div section form:nth-of-type(2) div label:first-of-type,
+div section form:nth-of-type(2) div label:nth-of-type(2) {
+    padding-right: 1em;
+}
+
+div section form:nth-of-type(2) div label {
+    border-bottom: 0.1em solid #87807d;
+}
+
+div section form:nth-of-type(2) div label input[type="radio"]:checked+span {
+    color: #e7772b;
+    position: relative;
+}
+
+div section form:nth-of-type(2) div label input[type="radio"]:checked+span::after {
+    content: "";
+    width: 100%;
+    height: 0.2em;
+    background-color: #e7772b;
+    display: block;
+    position: absolute;
+    bottom: -0.65em;
+}
+
+div section form:nth-of-type(2) div span {
+    font-weight: lighter;
+    color: #685c53;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+input[name*="sorteren"],
+input[name*="tijd"] {
+    margin-left: -1000em;
+    height: 0;
+}
+
+div section form:nth-of-type(2) div button[value="volgorde"] {
+    margin-left: auto;
+    width: 1em;
+    height: 2.05em;
+    margin-top: 0;
+    border-bottom: 0.15em solid #87807d;
+    background-color: transparent;
+    display: block;
+    color: black;
+    padding: 0 0 1.8em 0;
+    border-radius: 0;
+}
+
+div section form:nth-of-type(2) div button[value="volgorde"] img:nth-of-type(2),
+div section form:nth-of-type(2) div.sorteren-a-z button[value="volgorde"] img:first-of-type {
+    display: none;
+}
+
+div section form:nth-of-type(2) div.sorteren-a-z button[value="volgorde"] img:nth-of-type(2) {
+    display: inherit;
+}
+
+div section form:nth-of-type(2) div button[value="volgorde"] img {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+div section form:nth-of-type(2) div button[value="filteren"] {
+    display: none;
+    margin: 2em auto 0 auto;
+    background-color: #d6cec5;
+}
+
+
+/*   EINDE FORMULIER HOME   */
+
+
+/*   Filters overlay  */
+
+section form input[type=checkbox],
+.toon-filters input[type=radio] {
+    margin-left: -1000em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.toon-filters input[type=radio] {
+    margin-top: 1em;
+}
+
+section form input[type=checkbox]:focus+section form span,
+.toon-filters input[type=radio]:focus+section form span {
+    border-color: #e7772b;
+}
+
+section form span {
+    display: flex;
+    padding: 0.825em 0.625em 0.625em 0.625em;
+    border: 0.03125em solid #f1f1f1;
+    border-radius: 0.625em;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+section form input[type=checkbox]:checked+span::before {
+    background-size: 85%;
+    border-color: #e7772b;
+}
+
+section form input[type=checkbox]+span::before,
+section form:first-of-type input[type=radio]+span::before {
+    content: '';
+    width: 1.25em;
+    height: 1.25em;
+    background-color: #fff;
+    border: 0.12em solid #8d857e;
+    -webkit-transition: border-color .2s ease-in;
+    -o-transition: border-color .2s ease-in;
+    transition: border-color .2s ease-in;
+    display: inline-block;
+    margin-right: 1.25em;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 0;
+    transition: 0.3s;
+    margin-top: -0.2em;
+}
+
+section form:first-of-type input[type=checkbox]+span::before {
+    background-image: url('../img/icons/vinkje.svg');
+    border-radius: 0.25em;
+}
+
+section form input[type=checkbox]:checked+span {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+section form:first-of-type input[type=radio]+span::before,
+section form:first-of-type input[type=radio]+span::before {
+    border-radius: 6em;
+    background-image: url('../img/icons/cirkel.svg');
+}
+
+section form:first-of-type input[type=radio]:checked+span::before {
+    transition: 0.3s;
+    background-size: 50%;
+    border-color: #e7772b;
+}
+
+section form:first-of-type input[type=checkbox]+span::after,
+section form:first-of-type input[type=radio]+span::after {
+    font-size: 0.7em;
+    margin-left: auto;
+    color: black;
+    margin-top: 0.2em;
+}
+
+
+/* Aantal verhalen */
+
+section form:first-of-type div label:first-of-type input[type=checkbox]+span::after {
+    content: "(7)";
+}
+
+section form:first-of-type div label:nth-of-type(2) input[type=checkbox]+span::after {
+    content: "(7)";
+}
+
+section form:first-of-type div label:nth-of-type(3) input[type=checkbox]+span::after {
+    content: "(9)";
+}
+
+section form:first-of-type div label:nth-of-type(4) input[type=checkbox]+span::after {
+    content: "(12)";
+}
+
+section form:first-of-type div label:nth-of-type(5) input[type=checkbox]+span::after {
+    content: "(12)";
+}
+
+section form:first-of-type div label:nth-of-type(6) input[type=checkbox]+span::after {
+    content: "(12)";
+}
+
+section form:first-of-type div label:nth-of-type(7) input[type=checkbox]+span::after {
+    content: "(18)";
+}
+
+section form:first-of-type div label:nth-of-type(8) input[type=checkbox]+span::after {
+    content: "(14)";
+}
+
+section form:first-of-type div label:nth-of-type(9) input[type=checkbox]+span::after {
+    content: "(7)";
+}
+
+section form:first-of-type div label:nth-of-type(10) input[type=checkbox]+span::after {
+    content: "(10)";
+}
+
+section form:first-of-type div label:nth-of-type(11) input[type=checkbox]+span::after {
+    content: "(15)";
+}
+
+section form:first-of-type div label:nth-of-type(12) input[type=checkbox]+span::after {
+    content: "(21)";
+}
+
+section form:first-of-type div label:nth-of-type(13) input[type=checkbox]+span::after {
+    content: "(15)";
+}
+
+section form:first-of-type div label:nth-of-type(14) input[type=checkbox]+span::after {
+    content: "(16)";
+}
+
+section form:first-of-type div label:nth-of-type(15) input[type=checkbox]+span::after {
+    content: "(5)";
+}
+
+
+/* Filter opties overlay mobiel */
+
+@media (max-width: 37.5em) {
+    div section form:first-of-type fieldset>div:last-of-type>button:first-of-type,
+    .toon-filters aside,
+    body.toon-filters>footer:last-of-type,
+    .toon-filters main>section,
+    section form:first-of-type div:last-of-type input[type=radio]+span::before,
+    section form:first-of-type div:last-of-type input[type=radio]+span::before,
+    div section form:first-of-type fieldset div:nth-of-type(2) button {
+        display: none;
+    }
+    div section form:first-of-type>button:first-of-type {
+        padding-top: 1em;
+    }
+    div section form:first-of-type>button:first-of-type::before {
+        content: "";
+        display: inline-block;
+        height: 1em;
+        width: 1.5em;
+        margin-bottom: -0.1em;
+        background-image: url(../img/icons/pijl-terug.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type {
+        background-color: #F6F3F0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1em 1em 2em 1em;
+    }
+    .toon-filters form:first-of-type div:last-of-type button[value="volgorde"],
+    .toon-filters form:first-of-type div:last-of-type button[value="filteren"] {
+        display: inherit;
+    }
+    .toon-filters form:first-of-type div:last-of-type button[value="filteren"] {
+        background-color: #D5CDC4;
+        border-radius: 0.63em;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 20em;
+        min-width: 10em;
+    }
+    /*  Bottom block  */
+    .toon-filters form:first-of-type fieldset>div:last-of-type div {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: calc(100% + 1em);
+        margin-bottom: 1em;
+        border-radius: 0 0 0.625em 0;
+        box-sizing: border-box;
+        background-color: #f7f4f1;
+        bottom: 0;
+        z-index: 0;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type p {
+        font-weight: bold;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label:first-of-type {
+        margin-left: 1em;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label:first-of-type,
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label:nth-of-type(2) {
+        padding-right: 1em;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label {
+        border-bottom: 0.1em solid #87807d;
+        padding-bottom: 0.3em;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label input[type="radio"]:checked+span {
+        color: #e7772b;
+        position: relative;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div label input[type="radio"]:checked+span::after {
+        content: "";
+        width: 100%;
+        height: 0.2em;
+        background-color: #e7772b;
+        display: block;
+        position: absolute;
+        bottom: -0.65em;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div span {
+        font-weight: lighter;
+        color: #685c53;
+        cursor: pointer;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div button[value="volgorde"] {
+        margin-left: auto;
+        margin-right: 1em;
+        width: 1em;
+        height: 2.05em;
+        margin-top: 0.6em;
+        border-bottom: 0.15em solid #87807d;
+        background-color: transparent;
+        display: block;
+        color: black;
+        padding: 0 0 1.8em 0;
+        border-radius: 0;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div button[value="volgorde"] img:nth-of-type(2),
+    .toon-filters form:first-of-type fieldset>div:last-of-type div.sorteren-a-z button[value="volgorde"] img:first-of-type,
+    .toon-filters form:first-of-type fieldset>div:first-of-type button {
+        display: none;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div.sorteren-a-z button[value="volgorde"] img:nth-of-type(2) {
+        display: inherit;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div button[value="volgorde"] img {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .toon-filters form:first-of-type fieldset>div:last-of-type div button[value="filteren"] {
+        display: none;
+        margin: 2em auto 0 auto;
+        background-color: #d6cec5;
+    }
+}
+
+div section form:first-of-type button {
+    background-color: transparent;
+    color: #675c53;
+    border-radius: 0;
+}
+
+.toon-filters div section form:first-of-type {
+    display: inherit;
+    z-index: 999999;
+}
+
+div section form:first-of-type {
+    position: absolute;
+    background-color: white;
+    width: calc(100% - 2em);
+    height: 100%;
+    margin-left: -1em;
+    margin-right: 1em;
+    padding: 0 2em 47em 1em;
+    top: 0;
+    display: none;
+}
+
+form:first-of-type button[value="volgorde"],
+form:first-of-type button[value="filteren"] {
+    display: none;
+}
+
+
+/*   EINDE TOP BLOK   */
+
+
+/*   Uitgelicht   */
+
+main section section:nth-of-type(2n+1) {
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    padding-left: 1em;
+    padding-top: 2em;
+    box-sizing: border-box;
+}
+
+main section section:first-of-type {
+    padding-top: 0;
+}
+
+main>section section:nth-of-type(2n+1) div {
+    background-color: #ffffff;
+    margin-top: -0.25em;
+    padding: 0 1em;
+    box-sizing: border-box;
+    border-radius: 0 0.66em 0.66em 0.66em;
+    -webkit-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    -moz-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+}
+
+@media (min-width: 64em) {
+    body main>section section:nth-of-type(2n+2) div article {
+        height: 31em;
+    }
+}
+
+main section section:nth-of-type(2n+1) footer div {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+main section section:nth-of-type(2n+1) h2 {
+    margin-left: -0.6em;
+}
+
+main section section:first-of-type img {
+    margin-top: -1.25em;
+}
+
+main section section:nth-of-type(2n+1) img {
+    border-radius: 0.66em 0.66em 0 0.66em;
+    width: 100%;
+    margin-left: -1em;
+    -webkit-box-shadow: 0 -0.1em 1.13em 0 rgba(103, 92, 83, .3);
+    -moz-box-shadow: 0 -0.1em 1.13em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 -0.1em 1.13em 0 rgba(103, 92, 83, .3);
+}
+
+main section section:first-of-type article:first-of-type::before {
+    content: "";
+    display: inherit;
+    z-index: -1;
+    height: 7.25em;
+    background-color: #f0f0f0;
+    margin-top: -6em;
+    width: 200vw;
+    margin-left: -100vw;
+}
+
+
+/*   Aanbevolen  */
+
+main section section:nth-of-type(2n+2) {
+    padding-top: 2em;
+}
+
+main section section:nth-of-type(2n+2)>div {
+    display: flex;
+    width: calc(300% - 3em);
+}
+
+main section section:nth-of-type(2n+2) article {
+    border-radius: 0.667em;
+    -webkit-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    -moz-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    padding: 0 1.25em;
+    margin: 0 0.8em 2em 0.8em;
+    margin-bottom: 1.9em;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article img {
+    border-radius: 0.667em 0.667em 0 0;
+    height: 100%;
+    max-height: 20em;
+    object-fit: cover;
+    object-position: top;
+    width: calc(100% + 2.5em);
+    margin-left: -1.25em;
+}
+
+article h3 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em 0 0;
+    color: #000000;
+}
+
+
+/*  Bullet points */
+
+main section section:nth-of-type(2n+2)>ul {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+main section section:nth-of-type(2n+2)>ul li:first-of-type button {
+    background-color: #000000;
+}
+
+main section section:nth-of-type(2n+2)>ul li {
+    text-align: center;
+    list-style-type: none;
+}
+
+main section section:nth-of-type(2n+2)>ul li button {
+    background-color: #8b837e;
+    border-radius: 10em;
+    padding: 0.7em 0.7em;
+    font-size: 0.7em;
+    margin: 0 0.4em;
+}
+
+main section section:nth-of-type(2n+2)>ul li button:hover {
+    background-color: #000000;
+}
+
+
+/*  Meta Data  */
+
+article footer>span:first-of-type {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+}
+
+article footer span {
+    color: #675c53;
+    width: 100%;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+article footer div:first-of-type span:first-of-type {
+    min-width: 70%;
+}
+
+article footer {
+    padding: 0 0 1em 0;
+}
+
+
+/* Datum en leesduur */
+
+article footer div:first-of-type {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+article footer div:first-of-type span:last-of-type {
+    text-align: right;
+}
+
+article footer div:first-of-type span:last-of-type::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/icons/leesduur.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.4em;
+}
+
+
+/* Likes en views metadata */
+
+article footer div:nth-of-type(2) {
+    display: inline-flex;
+    width: 100%;
+    margin-top: auto;
+}
+
+article footer div:nth-of-type(2) span:first-of-type,
+article footer div:nth-of-type(2) span:nth-of-type(2) {
+    display: inline-block;
+    border-bottom: 0.13em solid #50a3de;
+    color: #50a3de;
+    width: auto;
+    text-align: right;
+    padding: 1em 0 0 0;
+}
+
+article footer div:nth-of-type(2) span:first-of-type::before {
+    background-image: url(../img/icons/likes.svg);
+    width: 1em;
+}
+
+article footer div:nth-of-type(2) span:nth-of-type(2)::before {
+    background-image: url(../img/icons/weergave.svg);
+    width: 1.5em;
+}
+
+article footer div:nth-of-type(2) span:nth-of-type(2) {
+    margin-left: 0.5em;
+}
+
+article footer div:nth-of-type(2) span:first-of-type::before,
+article footer div:nth-of-type(2) span:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.63em;
+}
+
+.like_button.lange-titel {
+    margin-top: 0.6em;
+}
+
+
+/* Likes en views buttons */
+
+article footer div:nth-of-type(2) button:first-of-type {
+    margin-left: auto;
+    margin-right: 0.5em;
+}
+
+article footer div:nth-of-type(2) button:first-of-type {
+    width: 2.5em;
+    background-image: url("/img/icons/like-knop.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+article footer div:nth-of-type(2) button:nth-of-type(2) {
+    width: 2.5em;
+    background-image: url("/img/icons/verhaal-toevoegen-knop.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+.toegevoegd main section>section:first-of-type article footer div:nth-of-type(2) button:nth-of-type(2) {
+    background-color: #f6f4f1;
+}
+
+.toegevoegd main section>section:first-of-type article footer div:nth-of-type(2) button:nth-of-type(2) {
+    background-image: url("/img/icons/verhaal-toevoegen-knop-hover.svg");
+}

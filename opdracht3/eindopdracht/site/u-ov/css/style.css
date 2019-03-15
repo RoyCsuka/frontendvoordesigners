@@ -1,0 +1,906 @@
+/*  TIPS CSS  */
+
+
+/*  a[href^="https://"]  Deze selector pakt het begin   */
+
+
+/*  a[href$=".pdf"]  Deze selector pakt het einde van een attribute     */
+
+
+/*  a[href*="homepage"]  dingen die erin voorkomen  */
+
+
+/*  first-of-type pakt het eerste element in een bepaald rijtje     */
+
+
+/*  nth-of-type(2n + 1) begin bij de eerste selector doe om de twee bepaalde styling  */
+
+
+/*   BEGIN ALGEMEEN   */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+html {
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+legend,
+b {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    font-size: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+input {
+    display: block;
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+input,
+button,
+p {
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+section form div button:nth-of-type(2) {
+    background-color: #d6cfc7;
+}
+
+button {
+    background-color: #e7772b;
+    padding: 0.63em 1em;
+    border-radius: 0.5em;
+    color: white;
+    border: none;
+    display: inline;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+a {
+    color: #675c53;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a[data="active"] {
+    color: #e7772b;
+}
+
+button a:hover,
+article a:hover {
+    text-decoration: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li,
+a {
+    cursor: pointer;
+}
+
+
+/* Hover meta data Likes en Mijn verhalen */
+
+article footer div:nth-of-type(2) button:hover {
+    opacity: 0.9;
+}
+
+.liked main section>section:first-of-type article footer div:nth-of-type(2) button:first-of-type {
+    background-color: #f6f4f1;
+}
+
+.liked main section>section:first-of-type article footer div:nth-of-type(2) button:first-of-type {
+    background-image: url("/img/icons/like-knop-hover.svg");
+}
+
+
+/*   EINDE ALGEMEEN   */
+
+
+/*   BEGIN HEADER HOME   */
+
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    margin-left: -1em;
+    padding: 0 1em;
+    position: fixed;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    -webkit-box-shadow: 0 0.13em 0.63em 0 rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0 0.13em 0.63em 0 rgba(50, 50, 50, 0.1);
+    box-shadow: 0 0.13em 0.63em 0 rgba(50, 50, 50, 0.1);
+}
+
+header ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li span {
+    display: none;
+}
+
+header li:first-of-type {
+    margin-left: calc(50% - 4.4em);
+}
+
+header ul li:nth-of-type(2) {
+    margin-left: calc(50% - 8.6em);
+    margin-right: 0.5em;
+    width: 1.8em;
+}
+
+header ul li:nth-of-type(2) a:last-of-type,
+.toegevoegd header ul li:nth-of-type(2) a:first-of-type {
+    display: none;
+}
+
+.toegevoegd header ul li:nth-of-type(2) a:last-of-type,
+header ul li:nth-of-type(2) a:first-of-type {
+    display: inline-flex;
+}
+
+header ul li:nth-of-type(2) sup {
+    background-color: #E5772B;
+    color: white;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.18em;
+    margin-right: -3em;
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width:45em) {
+    header ul li:nth-of-type(2) sup {
+        right: 6em;
+        position: fixed;
+        top: 0.1em;
+    }
+    header ul li:nth-of-type(2) {
+        width: 2.3em;
+        margin-right: 0;
+        position: relative;
+    }
+    header ul li:nth-of-type(2) img {
+        width: 1.8em;
+    }
+}
+
+header li a,
+header li,
+header ul {
+    height: 2.8em;
+}
+
+header li img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+header li:nth-of-type(2),
+header li:nth-of-type(3) {
+    width: 1.5em;
+}
+
+header li:first-of-type img {
+    height: 100%;
+    padding: 0.375em 0;
+    box-sizing: border-box;
+}
+
+
+/*   EINDE HEADER   */
+
+
+/*   Main content en verhalen / articles   */
+
+body main {
+    margin: 2.500em 0 1.5em 0;
+}
+
+
+/*   EINDE MAIN CONTENT   */
+
+
+/*   Onderkant pagina en Footer   */
+
+aside:before {
+    content: "";
+    display: inherit;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    height: 1.25em;
+    background-color: #f9f9f8;
+    z-index: 1;
+}
+
+aside {
+    background-color: #f0f0f0;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    padding: 0 1em 2.5em 1em;
+    box-sizing: border-box;
+    margin-top: 4.375em;
+}
+
+aside section:first-of-type {
+    background-color: #ffffff;
+    padding: 0.5em 1.25em 1.5em;
+    box-sizing: border-box;
+    border-radius: 0.63em;
+    margin-top: -1em;
+    z-index: 2;
+    -webkit-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    -moz-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+    box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .3);
+}
+
+aside h3 {
+    margin-bottom: 1em;
+    margin-top: 1.56em;
+    font-size: 1.2em;
+}
+
+aside p:first-of-type::before {
+    content: "";
+    width: 1.4em;
+    height: 1.4em;
+    background-image: url(../img/icons/contact-telefoon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inherit;
+    margin-left: -10%;
+    margin-right: calc(10% - 1.4em);
+}
+
+aside p:first-of-type {
+    padding-bottom: 0.35em;
+}
+
+aside p:nth-of-type(2) {
+    color: #675c53;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+aside p {
+    display: inline-block;
+    width: 90%;
+    padding-left: 10%;
+}
+
+aside img {
+    display: inline-block;
+}
+
+
+/* Footer */
+
+body>footer:last-of-type {
+    background-color: #ffffff;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    padding: 0 1em 2.2em;
+    box-sizing: border-box;
+}
+
+body>footer:last-of-type section div {
+    display: flex;
+    padding: 2.5em 0 1.25em;
+}
+
+body>footer:last-of-type section div a:nth-of-type(2),
+body>footer section div a:nth-of-type(3) {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+body>footer:last-of-type section div a:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: 0.63em;
+}
+
+body>footer:last-of-type section a {
+    color: #afa9a2;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    line-height: 2em;
+}
+
+
+/* Minor Breakpoints */
+
+@media (max-width: 45em) {
+    header ul,
+    main div section section:first-of-type,
+    main section section:nth-of-type(2n+1),
+    main section section:nth-of-type(2n+2),
+    aside section,
+    body>footer section,
+    header ul,
+    main div#top section:first-of-type,
+    aside section,
+    body>footer section,
+    main>section {
+        max-width: 37.5em;
+        margin: 0 auto;
+    }
+}
+
+
+/* Major Breakpoints */
+
+@media (min-width: 64em) {
+    /*  Article  */
+    article a {
+        max-height: 15em;
+    }
+    body main section section:nth-of-type(2n+2) article>div {
+        width: 100%;
+        height: 15.5em;
+        position: relative;
+    }
+    article h3 {
+        padding: 0.5em 0 0;
+    }
+    body main>section section:nth-of-type(2n+2) div article footer {
+        height: 12em;
+    }
+    article footer {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    article footer div:nth-of-type(2) {
+        display: inline-flex;
+        width: 100%;
+        margin-top: auto;
+    }
+    body header ul,
+    body main div#top section:first-of-type,
+    body aside section,
+    body>footer section:first-of-type,
+    body main>section {
+        max-width: 64em;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    body main div:first-of-type section:first-of-type {
+        margin: 0 auto;
+    }
+    form fieldset legend {
+        font-size: 1.3em;
+        padding-top: 0.8em;
+    }
+    body main>section section:nth-of-type(2n+1) {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0;
+    }
+    body main section section:nth-of-type(2n+1) img {
+        max-height: 16em;
+    }
+    body main>section section:nth-of-type(2n+2) div article {
+        height: 32em;
+        margin-bottom: 3em;
+        position: relative;
+    }
+    body main>section section:nth-of-type(2n+2) div article:first-of-type {
+        margin-left: 0;
+        margin-right: 0.8em;
+    }
+    body main>section section:nth-of-type(2n+2) div article:nth-of-type(2) {
+        margin-right: 0;
+        margin-left: 0.8em;
+    }
+    body main section section:first-of-type article:first-of-type::before {
+        height: 26em;
+        width: calc(100% + 35em);
+        border-bottom-right-radius: 0.667em;
+        margin-left: -33em;
+        margin-bottom: -17.8em;
+    }
+    body main>section section:first-of-type {
+        margin-top: 0;
+    }
+    body main>section section:first-of-type acticle {
+        margin-top: 1em;
+    }
+    body main>section section:nth-of-type(2n+2) {
+        width: 60%;
+        padding-top: 0;
+        margin-left: 6%;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    body main section section:nth-of-type(2n+2)>div {
+        width: 100%;
+    }
+    body main section section:nth-of-type(2n+2)>div {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    body main section section:nth-of-type(2n+2) article {
+        width: calc(50% - 3.5em);
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    body main section section:nth-of-type(2n+2) article:last-of-type {
+        display: none;
+    }
+    body main>section section:nth-of-type(4) {
+        margin-left: 0;
+    }
+    body main>section section:nth-of-type(3) {
+        float: right;
+    }
+    body main section section:nth-of-type(2n+2) article>div {
+        width: 100%;
+        height: 15.5em;
+        position: relative;
+    }
+    body main section section:nth-of-type(2n+2) article a footer div:last-of-type {
+        position: absolute;
+        bottom: 0;
+    }
+    article footer {
+        padding: 0.375em 0 1.5em 0;
+    }
+    /*  footer en aside onderkant  */
+    aside {
+        width: 66%;
+        margin-left: 33%;
+        padding: 0 1em 0 1em;
+    }
+    aside section {
+        display: inline-block;
+    }
+    aside section:first-of-type {
+        margin-right: 4%;
+        margin-left: 6%;
+        vertical-align: top;
+        width: 43%;
+    }
+    aside section:nth-of-type(2) {
+        padding-left: 4%;
+        border-left: 0.01em solid #675c53;
+        margin-top: 2em;
+        width: 45%;
+    }
+    aside section:nth-of-type(2) h3 {
+        margin-top: 0;
+        font-size: 1.55em;
+        padding-top: 1em;
+    }
+    aside section:nth-of-type(2) p,
+    aside section:nth-of-type(2) p b {
+        vertical-align: top;
+    }
+    aside section:nth-of-type(2) p b {
+        padding-left: 1em;
+    }
+    aside section:nth-of-type(2) p:first-of-type {
+        padding-bottom: 0;
+    }
+    aside section:nth-of-type(2) p:last-of-type {
+        padding-left: 2.5em;
+    }
+    aside::after {
+        content: "";
+        display: inline-block;
+        width: 100em;
+        margin-top: -13.55em;
+        margin-left: -1em;
+        height: calc(13.55em + 3em);
+        background-color: #f2f1f2;
+        z-index: -1;
+        position: relative;
+        vertical-align: bottom;
+    }
+    body>footer section>div {
+        margin-bottom: -3.4em;
+    }
+    body>footer:last-of-type section a {
+        display: inline-block;
+        width: auto;
+        margin-right: 1em;
+        font-size: 0.85em;
+        z-index: 2;
+    }
+    body>footer:last-of-type section>a:first-of-type {
+        margin-left: 12.2em;
+    }
+    body>footer:last-of-type section div a:nth-of-type(2) {
+        margin-left: auto;
+        margin-right: 1.5em;
+    }
+    article footer div:nth-of-type(2) {
+        width: calc(100% - 2.5em);
+    }
+}
+
+@media (max-width: 45em) {
+    body main section section:nth-of-type(2)>div {
+        display: flex;
+        width: calc(300% + 2em);
+    }
+}
+
+@media (min-width: 45em) {
+    h1 {
+        font-size: 2.1em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.55em;
+    }
+    h4 {
+        font-size: 1.35em;
+    }
+    h5 {
+        font-size: 1.15em;
+    }
+    body div section form:nth-of-type(2)::before,
+    body div section form:nth-of-type(2) fieldset::before,
+    main>div section>button,
+    main>div section form:first-of-type button,
+    body main>div section div:nth-of-type(3),
+    main>div section form:first-of-type div:first-of-type button::before,
+    main>div section form:first-of-type div:nth-of-type(2) button::before,
+    main>div section form:first-of-type div label,
+    body main section section:nth-of-type(2n+2)>ul,
+    body main>div section:first-of-type h2:first-of-type {
+        display: none;
+    }
+    body div section form:nth-of-type(2) div button[value="filteren"],
+    body main>div section:first-of-type h2:nth-of-type(2) {
+        display: inherit;
+    }
+    main>div section form:first-of-type,
+    main>div section form:first-of-type fieldset div:first-of-type,
+    main>div section form:first-of-type fieldset div:nth-of-type(2) {
+        display: inherit;
+        position: relative;
+        padding: 0;
+        margin-left: 0;
+    }
+    header ul,
+    main div#top section:first-of-type,
+    aside section,
+    body>footer section,
+    main>section {
+        max-width: 45em;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    /*  Hovers, focus en active  */
+    body>footer:last-of-type section a:hover {
+        text-decoration: underline;
+    }
+    div section form:first-of-type button:hover,
+    input[name*="sorteren"]:hover+span {
+        color: #e88131;
+    }
+    body div section form:nth-of-type(2) div button[value="filteren"]:hover,
+    main section section:nth-of-type(2n+2) article:hover {
+        box-shadow: 0 0.63em 20 0 rgba(192, 94, 0, .3);
+    }
+    main>section section:nth-of-type(2n+1) article:hover a img {
+        box-shadow: 0 0 20 0 rgba(192, 94, 0, .3);
+    }
+    body div section form:nth-of-type(2) div.sorteren-a-z button[value="filteren"]:hover {
+        box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
+    }
+    body section form:first-of-type span:hover,
+    body section form:first-of-type input:focus+span {
+        background-color: #f1f1f1;
+    }
+    {
+        -webkit-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .5);
+        -moz-box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .5);
+        box-shadow: 0 0.5em 1.13em 0 rgba(103, 92, 83, .5);
+    }
+    /*  Menu  */
+    header ul {
+        display: flex;
+    }
+    header li:first-of-type {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    header ul li:nth-of-type(2) img,
+    header ul li:nth-of-type(3) img {
+        max-height: 1.8em;
+        width: auto;
+        margin-top: 0.5em;
+    }
+    header ul li:nth-of-type(2),
+    header ul li:nth-of-type(3) {
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+    }
+    header ul li:nth-of-type(2) {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+    header ul li span {
+        font-size: 0.95em;
+        line-height: 3.2em;
+        padding-left: 0.5em;
+        display: inherit;
+    }
+    header ul li a:hover {
+        color: #e7772b;
+        text-decoration: underline;
+    }
+    header ul li a {
+        text-decoration: none;
+        display: inline-flex;
+        color: #675c53;
+    }
+    /*  Filteren sectie  */
+    body main>div {
+        padding: 1.875em 0 3.5em;
+        width: calc(100% + 2em);
+    }
+    body main div section:first-of-type {
+        border-radius: 0.625em;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 1.875em 2.5em 0 2.5em;
+    }
+    body main>div section:first-of-type h2 {
+        padding-bottom: 0;
+    }
+    fieldset legend {
+        font-size: 1.1em;
+    }
+    body div section form:nth-of-type(2) div {
+        border-radius: 0 0 0.625em 0.625em;
+        width: calc(100% + 5.25em);
+        margin-left: -2.6em;
+        padding: 1em 2.6em;
+    }
+    main>div section form:first-of-type {
+        background-color: transparent;
+    }
+    body section form:first-of-type span {
+        background-color: #ffffff;
+        margin-top: -1em;
+        border-radius: 0;
+    }
+    body main>div section form:first-of-type div:first-of-type,
+    body main>div section form:first-of-type div:nth-of-type(2) {
+        width: calc(50% - 1em);
+        display: inline-block;
+        position: relative;
+        max-height: 5.25em;
+    }
+    body main>div section form:first-of-type div:nth-of-type(2) input[name*="sorteren"] {
+        height: 0.62em;
+    }
+    div section form:nth-of-type(2) div label,
+    body div section form:nth-of-type(2) div button[value="volgorde"],
+    div section form:nth-of-type(2) div p {
+        padding-top: 0.4em;
+    }
+    body div section form:nth-of-type(2) div button[value="volgorde"] {
+        margin-left: 1em;
+    }
+    body div section form:nth-of-type(2) div button[value="filteren"] {
+        margin: 0 0 0 auto;
+    }
+    /*  Filters actief  */
+    body main>div section form:first-of-type div:first-of-type.toon-filters-bigscrn label {
+        margin-top: 0.11em;
+    }
+    body main>div section form:first-of-type div:first-of-type.toon-filters-bigscrn label:first-of-type {
+        margin-top: 0.15em;
+    }
+    body main>div section form:first-of-type div:nth-of-type(2).toon-filters-bigscrn label:first-of-type {
+        margin-top: 0.8em;
+    }
+    body main>div section form:first-of-type div:nth-of-type(2).toon-filters-bigscrn label {
+        margin-top: 0.8em;
+    }
+    body main>div section form:first-of-type div.toon-filters-bigscrn label {
+        display: inherit;
+        width: 100%;
+        margin-top: 0;
+        float: left;
+        position: relative;
+        z-index: 2;
+        transition: 0.7s;
+    }
+    body main>div section form:first-of-type div.toon-filters-bigscrn button {
+        border-color: #e6772b;
+    }
+    body main>div section form:first-of-type div:nth-of-type(2) {
+        margin-left: 1.7em;
+    }
+    main>div section form:first-of-type div:first-of-type button,
+    main>div section form:first-of-type div:nth-of-type(2) button {
+        display: inherit;
+        padding: 1em 0 0.5em 0;
+        border-bottom: 0.1em solid #87807d;
+        width: 100%;
+        text-align: left;
+        font-weight: lighter;
+    }
+    main>div section form:first-of-type div:first-of-type button::after,
+    main>div section form:first-of-type div:nth-of-type(2) button::after {
+        content: "";
+        display: inline-block;
+        text-align: right;
+        background-image: url(../img/icons/pijl-meer.svg);
+        background-size: 100%;
+        background-position: bottom;
+        height: 1em;
+        width: 0.83em;
+        background-repeat: no-repeat;
+        float: right;
+    }
+    div section form:nth-of-type(2) div button[value="filteren"],
+    div section form:nth-of-type(2) div button[value="filteren"] a {
+        cursor: default;
+    }
+    div section form:nth-of-type(2) div.sorteren-a-z button[value="filteren"],
+    div section form:nth-of-type(2) div.sorteren-a-z button[value="filteren"] a {
+        background-color: #e6772b;
+        cursor: pointer;
+    }
+    /*  Uitgelicht verhalen   */
+    body main section section:first-of-type article:first-of-type::before {
+        margin-top: -7em;
+    }
+    main section section:nth-of-type(2n+2) img {
+        max-height: 15em;
+    }
+    main section section:nth-of-type(2n+1) img {
+        max-height: 30em;
+    }
+    /*  Aanbevolen verhalen  */
+    body main section section:nth-of-type(2n+2) article {
+        margin: 0 0 2em 0;
+    }
+}
+
+@media (min-width: 45em) and (max-width:64em) {
+    /*  Aanbevolen verhalen  */
+    body main section section:nth-of-type(2n+2) article {
+        margin-bottom: 1.9em;
+    }
+    body main section section:nth-of-type(2n+2) article {
+        position: relative;
+        height: 15em;
+    }
+    body main section section:nth-of-type(2n+2)>div {
+        display: block;
+        width: 100%;
+    }
+    body main section section:nth-of-type(2n+2)>div img {
+        width: calc(50% + 1.25em);
+        margin-bottom: -0.25em;
+    }
+    body main section section:nth-of-type(2n+2) article>div {
+        width: calc(50% - 2em);
+    }
+    body main section section:nth-of-type(2n+2)>div img,
+    body main section section:nth-of-type(2n+2) article>div {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    body main section section:nth-of-type(2n+2) article>div {
+        position: absolute;
+        top: 0;
+        left: calc(50% + 1em);
+        height: 100%;
+    }
+    body main section section:nth-of-type(2n+2)>div img {
+        border-radius: 0.667em 0 0 0.667em;
+    }
+    body main section section:nth-of-type(2n+2) article footer div:last-of-type {
+        position: absolute;
+        bottom: 1em;
+    }
+    main>div form:first-of-type fieldset div:nth-of-type(2) legend {
+        font-size: 1em;
+    }
+}
