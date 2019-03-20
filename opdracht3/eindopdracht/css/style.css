@@ -287,6 +287,7 @@ article ul li:before,
 main > ul:first-of-type li:before {
 	background-color: #46a4bb;
 }
+
 main div > section article ul li {
 	color: black;
 }
@@ -420,5 +421,51 @@ footer small {
 
 	main > div:nth-of-type(2) {
 		padding: 30px 20px;
+	}
+}
+
+/* Loading ring */
+
+.lds-ring {
+	display: inline-block;
+	position: fixed;
+	left: calc(50% - 32px);
+	width: 64px;
+	height: 64px;
+	top: calc(50% - 32px);
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 51px;
+	height: 51px;
+	margin: 6px;
+	border: 6px solid #46a4bb;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #46a4bb transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }

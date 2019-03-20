@@ -1,30 +1,29 @@
-var uri = 'https://roycsuka.github.io/frontendvoordesigners/opdracht3/voorbeeld/json/movies.json'; //json file op github
+var uri = 'https://roycsuka.github.io/frontendvoordesigners/opdracht3/eindopdracht/json/portfolio-items.json'; //json file op github
 var button = document.querySelector("button");
-var loaderElement = document.querySelector("span");
-var section = document.querySelector('section');
-//console.log("loaderElement",loaderElement);
+var loaderElement = document.querySelector(".lds-ring");
+var section = document.querySelector('section.info-container');
 
 ////https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 function showData(jsonObj) {
-  var films = jsonObj;
-  console.log("showData films",films);
+  var items = jsonObj;
+  console.log("showData items",items);
 
-  for (var i = 0; i < films.length; i++) {
-    console.log("film " + i);
-    var filmpiekijken = document.createElement('article');
+  for (var i = 0; i < items.length; i++) {
+    console.log("item " + i);
+    var itempiekijken = document.createElement('article');
 
     //TITEL, COVER EN BESCHRIJVING
-    var filmtitel = document.createElement('h2');
-      filmtitel.textContent = films[i].title;
-    var filmplot = document.createElement('p');
-      filmplot.textContent = films[i].simple_plot;
-    var filmcover = document.createElement('img');
-      filmcover.src = films[i].cover;
-    //myImg.textContent = films[i].cover;
-    //console.log(filmcover.src);
+    var itemtitel = document.createElement('h2');
+      itemtitel.textContent = items[i].title;
+    var itemplot = document.createElement('p');
+      itemplot.textContent = items[i].simple_plot;
+    var itemcover = document.createElement('img');
+      itemcover.src = items[i].cover;
+    //myImg.textContent = items[i].cover;
+    //console.log(itemcover.src);
 
     //GENRES
-    var genres = films[i].genres;
+    var genres = items[i].genres;
     for (var n = 0; n < genres.length; n++) {
       console.log("genre: ",genres[n]);
     } //end for genres
@@ -34,7 +33,7 @@ function showData(jsonObj) {
     var reviewsbutton = document.createElement('button');
       reviewsbutton.textContent = "Lees reviews";
     //reviewslezen.appendChild(reviewsheader);
-    var reviews = films[i].reviews;
+    var reviews = items[i].reviews;
     for (var j = 0; j < reviews.length; j++) {
       var listItem = document.createElement('li');
       listItem.textContent = reviews[j].score + ' - ' + reviews[j].created_at;
@@ -61,19 +60,19 @@ function showData(jsonObj) {
 
 
     //ALLE DATA KOPPELEN
-    filmpiekijken.appendChild(filmtitel);
-    filmpiekijken.appendChild(filmplot);
-    filmpiekijken.appendChild(filmcover);
-    filmpiekijken.appendChild(reviewsbutton);
-    filmpiekijken.appendChild(reviewslezen);
+    itempiekijken.appendChild(itemtitel);
+    itempiekijken.appendChild(itemplot);
+    itempiekijken.appendChild(itemcover);
+    itempiekijken.appendChild(reviewsbutton);
+    itempiekijken.appendChild(reviewslezen);
 
     //HTML INJECTION IN BESTAANDE SECTION
-    section.appendChild(filmpiekijken);
+    section.appendChild(itempiekijken);
 
 
 
 
-  } //end: for films
+  } //end: for items
 } //end: function showData
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
