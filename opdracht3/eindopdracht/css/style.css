@@ -164,7 +164,8 @@ main div > section a div {
 }
 
 /* Overlay | Items */
-main section > a img {
+main section > a img,
+main section > article img {
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
@@ -213,28 +214,31 @@ main div > section:hover div {
 	opacity: 1;
 }
 
-.open a img {
+.info-container.open article img {
 	width: 70%;
+	height: 100%;
 }
 
 .info-container button {
 	display: none;
 }
 
-.info-container.open button {
+.info-container.open a {
 	display: inline-block;
 	position: fixed;
-	top: 50px;
+	bottom: 10px;
 	width: 150px;
-	margin-left: 850px;
+	left: calc(50% - 75px);
 	border: none;
 	padding: 15px 0;
 	box-sizing: border-box;
 	background-color: #46a4bb;
 	color: white;
 	border-radius: 4px;
+	text-align: center;
 	font-family: 'Axiforma-book', sans-serif;
 	font-size: 16px;
+	z-index: 1;
 }
 
 .open div h3:first-of-type,
@@ -425,14 +429,18 @@ footer small {
 }
 
 /* Loading ring */
+.lds-ring.show {
+	display: inline-block;
+}
 
 .lds-ring {
-	display: inline-block;
+	display: none;
 	position: fixed;
 	left: calc(50% - 32px);
 	width: 64px;
 	height: 64px;
 	top: calc(50% - 32px);
+	z-index: 2;
 }
 
 .lds-ring div {
