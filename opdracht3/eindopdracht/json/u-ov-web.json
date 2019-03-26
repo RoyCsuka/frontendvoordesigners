@@ -1,39 +1,30 @@
 [
 	{
 		"id": 1,
-		"title": "U-OV website",
-		"plot": "Five friends head to a remote cabin, where the discovery of a Book of the Dead leads them to unwittingly summon up demons living in the nearby woods. The evil presence possesses them until only one is left to fight for survival.",
-		"meta_data": "",
-		"cover": "./img/cards/u-ov-website.jpg",
+		"title": "U-OV Website",
+		"cover": "./img/u-ov/home-page.jpg",
 		"meta_items": [
 			{
 				"id": 1,
-				"item": "4 februari 2019 t/m 15 april 2019"
+				"item": "Webdesign"
             },
 			{
 				"id": 2,
-				"item": "Illustrator (Presentatie poster, documentatie en ontwerp)"
+				"item": "Semantisch HTML5"
 			},
 			{
 				"id": 3,
-				"item": "Photoshop (afbeeldingen bewerken)"
+				"item": "CSS3"
 			},
 			{
 				"id": 4,
-				"item": "Productbiografie"
-			},
-			{
-				"id": 5,
-				"item": "Design Rationale"
-			},
-			{
-				"id": 6,
-				"item": "Concept presenatatie poster"
+				"item": "JavaScript"
 			}],
+		"caseTitel":"De Case",
 		"case_items": [
 			{
 				"id": 7,
-				"caseInfo": "Een reisorganisatie wil niet langer als een vervoerder bekend staan, maar als een distributeur van ervaringen. Daarom gaat de reisorganisatie een verhalenwebsite aanbieden aan zijn klanten. Voor, tijdens en na de reis kunnen klanten online verhalen lezen op een device naar keuze. Dit doen ze tijdens het wachten, even tussendoor in de rij en tijdens een lange vlucht, vaart of rit. Via een overzichtspagina moeten reizigers 99 verhalen kunnen opzoeken en lezen. Aan mij de opdracht deze website te ontwerpen."
+				"case_info": "Een reisorganisatie wil niet langer als een vervoerder bekend staan, maar als een distributeur van ervaringen. Daarom gaat de reisorganisatie een verhalenwebsite aanbieden aan zijn klanten. Voor, tijdens en na de reis kunnen klanten online verhalen lezen op een device naar keuze. Dit doen ze tijdens het wachten, even tussendoor in de rij en tijdens een lange vlucht, vaart of rit. Via een overzichtspagina moeten reizigers 99 verhalen kunnen opzoeken en lezen. Aan mij de opdracht deze website te ontwerpen."
 			},
 			{
 				"id": 8,
@@ -42,6 +33,14 @@
 			{
 				"id": 9,
 				"case_info": "Kies één van deze reisorganisaties: WOW Air, Eurostar, R-NET, U-OV Om een idee te krijgen van de verschillende verhalen staan hier de 99 verhalen"
+			}
+		],
+		"onderzoekTitel": "Onderzoek",
+		"onderzoek": "Voor dit project is er een Design Rationale waarin je het hele ontwerp proces kan volgen voor dit project.",
+		"resultaten": [
+			{
+				"id": 10,
+				"image": "./img/u-ov/home-page.jpg"
 			}
 		]
     }

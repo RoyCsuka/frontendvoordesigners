@@ -1,5 +1,5 @@
 var uri = '/frontendvoordesigners/opdracht3/eindopdracht/json/u-ov-web.json'; //json file op github
-var button = document.querySelector("a.hallo");
+var button = document.querySelector(".info-container > article");
 var loaderElement = document.querySelector(".lds-ring");
 var section = document.querySelector('section.u-ov');
 
@@ -9,7 +9,6 @@ function showData(jsonObj) {
 	console.log("showData items", items);
 
 	for (var i = 0; i < items.length; i++) {
-		console.log("item " + i);
 		var projectbekijken = document.createElement('article');
 
 		//Project afbeelding, titel en beschrijving
@@ -17,6 +16,12 @@ function showData(jsonObj) {
 		projectPlaatje.src = items[i].cover;
 		var itemtitel = document.createElement('h4');
 		itemtitel.textContent = items[i].title;
+		var casetitel = document.createElement('h5');
+		casetitel.textContent = items[i].caseTitel;
+		var onderzoekTitel = document.createElement('h5');
+		onderzoekTitel.textContent = items[i].onderzoekTitel;
+		var onderzoek = document.createElement('p');
+		onderzoek.textContent = items[i].onderzoek;
 
 		
 		
@@ -38,11 +43,29 @@ function showData(jsonObj) {
 		var deCase = document.createElement('div');
 		var case_items = items[i].case_items;
 
-		for (var j = 0; j < case_items.length; j++) { 
+		for (var k = 0; k < case_items.length; k++) { 
 			var listItem = document.createElement('p');
-			listItem.textContent = case_items[j].caseInfo;
+			listItem.textContent = case_items[k].case_info;
 			deCase.appendChild(listItem);
 		} // Einde: for Case Info
+		
+		
+		
+
+		// De resultaten
+//		var resultaten = document.createElement('a');
+//		a.appendChild(linkText);
+//		a.title = "my title text";
+//		a.href = "http://example.com";
+//		document.body.appendChild(a);
+		
+//		var case_items = items[i].case_items;
+
+//		for (var k = 0; k < case_items.length; k++) { 
+//			var listItem = document.createElement('img');
+//			listItem.textContent = case_items[k].case_info.src = items[i].image;
+//			deCase.appendChild(listItem);
+//		} // Einde: for resultaten
 		
 		
 		
@@ -58,7 +81,7 @@ function showData(jsonObj) {
 		} 
 		
 		section.addEventListener("click", function () {
-			var button = this.parentNode.querySelector('button'); 
+			var button = this.parentNode.querySelector('a'); 
 			
 		}); // Einde: this Verberg knop
 
@@ -66,11 +89,14 @@ function showData(jsonObj) {
 
 
 		// Data koppelen aan JSON file
-		projectbekijken.appendChild(verbergknop);
 		projectbekijken.appendChild(projectPlaatje);
 		projectbekijken.appendChild(itemtitel);
 		projectbekijken.appendChild(meta_data);
+		projectbekijken.appendChild(casetitel);
 		projectbekijken.appendChild(deCase);
+		projectbekijken.appendChild(onderzoekTitel);
+		projectbekijken.appendChild(onderzoek);
+		projectbekijken.appendChild(verbergknop);
 
 		// HET JavaScript bestand laden in HTML
 		section.appendChild(projectbekijken);
