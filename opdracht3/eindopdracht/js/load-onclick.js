@@ -1,4 +1,4 @@
-var uri = '/frontendvoordesigners/opdracht3/eindopdracht/json/u-ov-web.json'; //json file op github
+var uri = '/frontendvoordesigners/opdracht3/eindopdracht/json/u-ov-web.json';
 var button = document.querySelector(".info-container > article");
 var loaderElement = document.querySelector(".lds-ring");
 var section = document.querySelector('section.u-ov');
@@ -6,7 +6,6 @@ var section = document.querySelector('section.u-ov');
 
 function showData(jsonObj) {
 	var items = jsonObj;
-	console.log("showData items", items);
 
 	for (var i = 0; i < items.length; i++) {
 		var projectbekijken = document.createElement('article');
@@ -52,19 +51,15 @@ function showData(jsonObj) {
 		
 		
 
-		// De resultaten
+//		// De resultaten
 //		var resultaten = document.createElement('a');
-//		a.appendChild(linkText);
-//		a.title = "my title text";
-//		a.href = "http://example.com";
-//		document.body.appendChild(a);
-		
-//		var case_items = items[i].case_items;
-
-//		for (var k = 0; k < case_items.length; k++) { 
+//		resultaten.href = items[i].resultatenlink;		
+//		var resultaten_plaatje = items[i].resultatenimage;
+//
+//		for (var l = 0; l < resultaten_plaatje.length; l++) { 
 //			var listItem = document.createElement('img');
-//			listItem.textContent = case_items[k].case_info.src = items[i].image;
-//			deCase.appendChild(listItem);
+//			listItem.textContent = resultaten_plaatje[l].listItem.src = items[i].resultatenimage;
+//			resultaten.appendChild(listItem);
 //		} // Einde: for resultaten
 		
 		

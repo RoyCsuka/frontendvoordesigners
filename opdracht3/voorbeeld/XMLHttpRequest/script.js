@@ -95,8 +95,8 @@ function loadimagesmetXHR(){
 //  request.onload = function() {
 //      console.log("request.onload: ",request.response);
 //    }
-/*request.timeout = 10000; // time in milliseconds
-  request.ontimeout = function(e) {
+request.timeout = 10000; // time in milliseconds
+  /*request.ontimeout = function(e) {
     // XMLHttpRequest timed out. Do something here.
     console.log("ontimeout: " +request.timeout+", het laden duurt te lang !",e);
   };
@@ -105,7 +105,7 @@ function loadimagesmetXHR(){
       console.log('Fetch Error', request.status);
   };
 }
-//loadimagesmetXHR();
+
 
 //actie
 button.onclick = function(){

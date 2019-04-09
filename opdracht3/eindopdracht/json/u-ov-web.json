@@ -3,6 +3,7 @@
 		"id": 1,
 		"title": "U-OV Website",
 		"cover": "./img/u-ov/home-page.jpg",
+		"resultatenlink": "",
 		"meta_items": [
 			{
 				"id": 1,
@@ -40,7 +41,7 @@
 		"resultaten": [
 			{
 				"id": 10,
-				"image": "./img/u-ov/home-page.jpg"
+				"resultatenimage": "./img/u-ov/home-page.jpg"
 			}
 		]
     }

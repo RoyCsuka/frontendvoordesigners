@@ -147,6 +147,7 @@ main div > section {
 	border-radius: 8px;
 	transition-duration: 0.7s;
 	position: relative;
+	cursor: pointer;
 }
 
 /* Overlay */
