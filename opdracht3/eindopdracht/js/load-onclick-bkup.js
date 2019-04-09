@@ -1,17 +1,15 @@
 var uri = '/opdracht3/eindopdracht/json/u-ov-web.json';
 var button = document.querySelector(".info-container > article");
 var loaderElement = document.querySelector(".lds-ring");
-var section = document.querySelector('main > div:nth-of-type(3)');
+var section = document.querySelector('section.u-ov');
 
 function showData(jsonObj) {
 	var items = jsonObj;
 
 	for (var i = 0; i < items.length; i++) {
-		var wrapper = document.createElement('section');
-		wrapper.classList.add(items[i].class, 'info-container');
-		
 		var projectbekijken = document.createElement('article');
 		projectbekijken.id = ('openOnEnter');
+		projectbekijken.classList.add = items[i].title;
 
 		//Project afbeelding, titel en beschrijving
 		var projectPlaatje = document.createElement('img');
@@ -46,23 +44,33 @@ function showData(jsonObj) {
 			deCase.appendChild(listItem);
 		} // Einde: for Case Info
 		
+//		// De resultaten
+//		var resultaten = document.createElement('a');
+//		resultaten.href = items[i].resultatenlink;		
+//		var resultaten_plaatje = items[i].resultatenimage;
+//
+//		for (var l = 0; l < resultaten_plaatje.length; l++) { 
+//			var listItem = document.createElement('img');
+//			listItem.textContent = resultaten_plaatje[l].listItem.src = items[i].resultatenimage;
+//			resultaten.appendChild(listItem);
+//		} // Einde: for resultaten
+		
+		
+		
+		
 		// Verberg knop
 		var verbergknop = document.createElement('a');
 		verbergknop.textContent = "Verberg project";
 
-		verbergknop.info = wrapper;
+		verbergknop.info = section; 
 		
 		verbergknop.onclick = function () {			
 			this.info.classList.toggle('open')
 		} 
 		
-		wrapper.addEventListener("click", function () {
+		section.addEventListener("click", function () {
 			var button = this.parentNode.querySelector('a'); 
 		}); // Einde: this Verberg knop
-
-		// nesten
-		wrapper.appendChild(projectbekijken);
-		section.appendChild(wrapper);
 
 		// Data linken aan JSON file
 		projectbekijken.appendChild(projectPlaatje);
@@ -73,8 +81,13 @@ function showData(jsonObj) {
 		projectbekijken.appendChild(onderzoekTitel);
 		projectbekijken.appendChild(onderzoek);
 		projectbekijken.appendChild(verbergknop);
+
+		// nesten
+		section.appendChild(projectbekijken);
+		div.appendChild(projectbekijken);
 	}
 }
+
 
 function loadimagesmetXHR() {
 	var request = new XMLHttpRequest();
@@ -103,6 +116,7 @@ function loadimagesmetXHR() {
 		console.log('Fetch Error', request.status);
 	};
 }
+
 
 //actie
 button.onclick = function () {

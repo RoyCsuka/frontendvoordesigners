@@ -2,6 +2,53 @@
 	{
 		"id": 1,
 		"title": "U-OV Website",
+		"class": "u-ov",
+		"cover": "./img/u-ov/home-page.jpg",
+		"resultatenlink": "",
+		"meta_items": [
+			{
+				"id": 1,
+				"item": "Webdesign"
+            },
+			{
+				"id": 2,
+				"item": "Semantisch HTML5"
+			},
+			{
+				"id": 3,
+				"item": "CSS3"
+			},
+			{
+				"id": 4,
+				"item": "JavaScript"
+			}],
+		"caseTitel":"De Case",
+		"case_items": [
+			{
+				"id": 7,
+				"case_info": "Een reisorganisatie wil niet langer als een vervoerder bekend staan, maar als een distributeur van ervaringen. Daarom gaat de reisorganisatie een verhalenwebsite aanbieden aan zijn klanten. Voor, tijdens en na de reis kunnen klanten online verhalen lezen op een device naar keuze. Dit doen ze tijdens het wachten, even tussendoor in de rij en tijdens een lange vlucht, vaart of rit. Via een overzichtspagina moeten reizigers 99 verhalen kunnen opzoeken en lezen. Aan mij de opdracht deze website te ontwerpen."
+			},
+			{
+				"id": 8,
+				"case_info": "Dus, het ontwerpen & maken van een website om online verhalen te lezen voor op reis. De website wordt responsive en past binnen de huisstijl van de opdrachtgever. Het wordt een seamless multi-device experience. Bezoekers kunnen verhalen vinden en lezen, en misschien opslaan. Ook moeten bezoekers zelf iets kunnen achterlaten, zoals een reactie, een like, of een foto. De 99 verhalen worden uniek vormgegeven in een stijl die aansluit bij de tone-of-voice van het verhaal."
+			},
+			{
+				"id": 9,
+				"case_info": "Kies één van deze reisorganisaties: WOW Air, Eurostar, R-NET, U-OV Om een idee te krijgen van de verschillende verhalen staan hier de 99 verhalen"
+			}
+		],
+		"onderzoekTitel": "Onderzoek",
+		"onderzoek": "Voor dit project is er een Design Rationale waarin je het hele ontwerp proces kan volgen voor dit project.",
+		"resultaten": [
+			{
+				"id": 10,
+				"resultatenimage": "./img/u-ov/home-page.jpg"
+			}
+		]
+    },
+	{
+		"id": 2,
+		"title": "Titel 2",
 		"cover": "./img/u-ov/home-page.jpg",
 		"resultatenlink": "",
 		"meta_items": [
